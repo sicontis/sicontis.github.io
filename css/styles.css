@@ -1,0 +1,104 @@
+/* PAGE COLORS
+  GLITTER #E8EEF2
+  ONYX #37393A
+  ROSE MADDER #D72638
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #E8EEF2;
+  color: #37393A;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header, section {
+  padding: 40px 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2em;
+  font-family: 'Poppins';
+  font-weight: 700;
+}
+header h1 span {
+  color: #D72638;
+}
+
+.links i {
+  padding: 10px;
+  transition: all .5s;
+}
+.links i:hover {
+  color: #D72638;
+  cursor: pointer;
+}
+
+.about {
+  margin: 0 auto;
+  font-size: 1.1em;
+  line-height: 1.7em;
+  padding: 20px 40px;
+}
+.about h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about span {
+  display: inline-block;
+  color: #D72638;
+}
+.about strong {
+  font-weight: 600;
+}
+
+.portfolio {
+  background-color: #37393A;
+  color: #FFFFFF;
+  margin-top: 50px;
+}
+
+.work {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 400px;
+}
+.work h1 {
+  color: #D72638;
+  font-size: 2em;
+  font-family: 'Poppins';
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 699px) and (min-width: 520px) {
+  
+  header, section {
+    padding: 20px 0;
+  }
+  header {
+    flex-direction: column;
+  }
+  .about {
+    padding: 20px;
+  }
+  
+}
