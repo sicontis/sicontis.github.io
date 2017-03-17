@@ -154,6 +154,19 @@ body {
 .who {
   padding: 50px;
   background-color: #D8C99B;
+  position: relative;
+}
+.who:after {
+  content: '';
+  position: absolute;
+  width: 0;
+	height: 0;
+  bottom: -40px;
+  left: calc(50% - 40px);
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-top: 40px solid #D8C99B;
+  z-index: 40;
 }
 .who h3 {
   font-family: 'Catamaran', sans-serif;
