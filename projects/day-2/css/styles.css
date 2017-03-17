@@ -5,6 +5,7 @@ JAPANESE INDIGO: #273E47
 TIGERS EYE: #D8973C
 DEEP CARMINE: #A4243B
 DARK VANILLA: #D8C99B
+GLITTER #E8EEF2
 */
 
 @import url('https://fonts.googleapis.com/css?family=Catamaran:400,600,800');
@@ -13,6 +14,7 @@ DARK VANILLA: #D8C99B
 
 body {
   font-family: Arial, sans-serif;
+  background: #E8EEF2;
 }
 
 .container {
