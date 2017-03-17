@@ -205,6 +205,10 @@ body {
   text-align: center;
   padding: 40px 0 20px 0;
 }
+.accept a {
+  color: #D8C99B;
+  text-decoration: none;
+}
 .btn-group {
   padding: 20px 0 50px 0;
 }
