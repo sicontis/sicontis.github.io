@@ -24,7 +24,7 @@ a {
 }
 
 header, section {
-  padding: 40px 0;
+  padding: 40px 20px;;
 }
 
 header {
@@ -80,7 +80,6 @@ header h1 span {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  height: 400px;
 }
 .work h1 {
   color: #D72638;
@@ -90,30 +89,38 @@ header h1 span {
 }
 .work ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .work li {
   border: 1px solid silver;
-  width: 40%;
   padding: 30px;
   text-align: center;
   text-transform: uppercase;
+  flex: 1 0 40%;
+  margin: 10px;
 }
 .work li h3 {
   font-size: 1.5em;
   margin: 0 0 20px 0;
 }
 
-@media screen and (max-width: 699px) and (min-width: 520px) {
+@media screen and (max-width: 500px) and (min-width: 360px) {
   
   header, section {
-    padding: 20px 0;
+    padding: 20px;
   }
   header {
     flex-direction: column;
   }
   .about {
     padding: 20px;
+  }
+  .work h1 {
+    text-align: center;
+  }
+  .work li {
+    width: 100%;
   }
   
 }
