@@ -169,17 +169,58 @@ footer a {
   overflow: hidden;
 }
 
-
-@media screen and (max-width: 699px) and (min-width: 520px) {
-  
-  header, section {
-    padding: 20px 0;
-  }
-  header {
+@media screen and (max-width: 880px) and (min-width: 500px) {
+  .place {
     flex-direction: column;
   }
-  .about {
-    padding: 20px;
+  .pics img {
+    width: 100%;
   }
+  .place .info span {
+    display: block;
+    background: #FFFFFF;
+    padding: 10px;
+    font-size: 1.2em;
+    transform: translate(-10px, -5px);
+    font-family: 'Roboto Slab', serif;
+    font-style: italic;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 360px) {
   
+  .logos {
+    display: none;
+  }
+  .place {
+    flex-direction: column;
+  }
+  .title-sm {
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .title-sm h1 {
+    font-size: 1.2em;
+  }
+  .pics img {
+    width: 100%;
+    max-width: 600px;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+  }
+  .place .info span {
+    display: initial;
+    background: transparent;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: normal;
+    padding: 0;
+  }
 }
