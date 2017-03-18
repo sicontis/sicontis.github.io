@@ -18,7 +18,8 @@ body {
 }
 
 .container {
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -180,15 +181,17 @@ body {
 .speaker {
   height: 170px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   padding: 20px;
   border-bottom: 1px dotted rgba(164, 36, 59, 1);
 }
 .speaker img {
-  /*width: 150px;
-  height: 150px;*/
   border-radius: 50%;
+}
+.speaker div {
+  flex: 1 0 60%;
 }
 .speaker h4 {
   font-weight: 600;
@@ -224,10 +227,16 @@ body {
   color: #D8C99B;
   text-decoration: none;
 }
+.accept p {
+  padding: 50px 0;
+}
 .btn-group {
-  padding: 20px 0 50px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 .btn-group button {
+  margin: 10px;
   text-transform: uppercase;
   border: none;
   outline: none;
@@ -237,16 +246,21 @@ body {
 }
 
 
-@media screen and (max-width: 699px) and (min-width: 520px) {
+@media screen and (max-width: 500px) and (min-width: 360px) {
   
-  header, section {
-    padding: 20px 0;
+  .speaker {
+    text-align: center;
+    height: 100%;
   }
-  header {
+  .speaker img {
+    margin: 0 auto;
+  }
+  .btn-group {
     flex-direction: column;
+    justify-content: center;
   }
-  .about {
-    padding: 20px;
+  .accept p {
+    text-align: center;
   }
   
 }
