@@ -1,0 +1,280 @@
+/*
+  SITE COLORS
+  ---------------------------
+
+  GHOST WHITE: #F7FAFD
+  SUNBURNT CYCLOPS: #FD3F4C
+  LICORICE: #160F18
+  ROMAN SILVER: #8B899F
+  LANGUID LAVENDER: #D7D3E5
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Permanent+Marker');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #F7FAFD;
+  color: #160F18;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+}
+
+header, section, footer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-align: center;
+}
+.logo h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.5em;
+  color: #FD3F4C;
+}
+.logo h3 {
+  font-weight: 700;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+}
+.menu li {
+  padding: 5px 20px;
+}
+.menu li a {
+  font-size: .8em;
+  font-weight: 600;
+  transition: all .7s;
+}
+.menu li:hover a {
+  color: #FD3F4C;
+}
+
+.hero {
+  height: 300px;
+  background: url('../img/hero-banner.jpeg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-title {
+  padding: 14px;
+  margin-top: 40px;
+  background: #FFF url('../img/stripe.png');
+  height: 70px;
+  border: 1px dashed #8B899F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-title h1 {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.hero-title h1 span {
+  color: #8B899F;
+  font-size: 1.3em;
+  padding: 1px 4px;
+  border: 2px solid #8B899F;
+}
+
+.about {
+  font-size: .9em;
+  padding: 60px 30px;
+  line-height: 1.7em;
+  background: rgba(215, 211, 229, .3);
+  text-transform: uppercase;
+}
+
+.shatner, .nimoy, .uhura, .pablo {
+  width: 100%;
+  display: flex;
+  background: #FFFFFF;
+}
+.shatner img, .nimoy img, .uhura img, .pablo img {
+  width: 220px;
+}
+
+.info {
+  width: 40%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #FFF url('../img/stripe.png');
+}
+.info h1 {
+  color: #8B899F;
+  font-size: 1.4em;
+  text-align: center;
+  font-weight: 600;
+  padding: 5px;
+  border: 2px solid #8B899F;
+}
+.info li {
+  font-size: .8em;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+.info li strong {
+  display: inline-block;
+  width: 120px;
+  font-weight: 600;
+  color: #FD3F4C;
+}
+.pic {
+  width: 60%;
+  height: 400px;
+}
+.pic img {
+  width: 100%;
+  height: auto;
+}
+
+.links {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.links i {
+  font-size: 20px;
+  color: #8B899F;
+  padding: 10px;
+  transition: all .7s;
+}
+.links i:hover {
+  color: #FD3F4C;
+  cursor: pointer;
+}
+
+.shatner .info {
+  border-top: 1px dashed #8B899F;
+  border-left: 1px dashed #8B899F;
+}
+.shatner .links {
+  justify-content: flex-end;
+  border-left: 1px dashed #8B899F;
+}
+
+.nimoy .info {
+  border-top: 1px dashed #8B899F;
+  border-right: 1px dashed #8B899F;
+}
+.nimoy .links {
+  justify-content: flex-start;
+  border-right: 1px dashed #8B899F;
+}
+
+.uhura .info {
+  border-top: 1px dashed #8B899F;
+  border-left: 1px dashed #8B899F;
+}
+.uhura .links {
+  justify-content: flex-end;
+  border-left: 1px dashed #8B899F;
+}
+
+.pablo .info {
+  border-top: 1px dashed #8B899F;
+  border-right: 1px dashed #8B899F;
+}
+.pablo .links {
+  justify-content: flex-start;
+  border-right: 1px dashed #8B899F;
+}
+
+.footer {
+  font-size: .9em;
+  padding: 40px 30px;
+  text-align: center;
+  background: rgba(215, 211, 229, .3);
+  border-top: 1px dashed #8B899F;
+  text-transform: uppercase;
+}
+.footer a {
+  color: #FD3F4C;
+}
+
+
+@media screen and (max-width: 500px) and (min-width: 360px) {
+  
+  header {
+    flex-direction: column;
+  }
+
+  .menu {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about {
+    margin-bottom: 20px;
+  }
+
+  .shatner, .uhura {
+    border-top: 1px dashed #8B899F;
+    flex-direction: column;
+  }
+  .nimoy, .pablo {
+    border-top: 1px dashed #8B899F;
+    flex-direction: column-reverse;
+  }
+
+  .info {
+    width: 100%;
+    border: none !important;
+  }
+
+  .pic {
+    width: 100%;
+    height: 70px;
+    position: relative;
+  }
+  .pic img {
+    display: none;
+  }
+  .links {
+    height: 50px;
+    border: none !important;
+  }
+
+  .shatner .links {
+    justify-content: center;
+  }
+  .nimoy .links {
+    justify-content: center;
+  }
+  .uhura .links {
+    justify-content: center;
+  }
+  .pablo .links {
+    justify-content: center;
+  }
+  
+}
