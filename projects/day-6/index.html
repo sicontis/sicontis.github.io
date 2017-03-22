@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset='utf-8'>
+         <title>Day 6 - Book/Author</title>
+         <meta name='viewport' content='width=device-width, initial-scale=1'>
+         <link rel="stylesheet" href="css/reset.css">
+         <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container" id="app">
+
+            <header>
+                <div class="logo">
+                    <img src="img/logo.svg" id="swlogo" ref="swlogo">
+                    <h1 id="title">Aftermath</h1>
+                </div>
+                <div class="bkg">
+                    <img src="img/bkg-03.jpg">
+                </div>
+            </header>
+
+            <section>
+        
+                    <transition name="fade">
+                        <router-view class="view"></router-view>
+                    <transition>
+
+            </section>
+
+        </div>
+
+        <template id="home">
+            <div class="books">
+                <div class="book" id="book1">
+                    <router-link to="/book1">
+                        <img src="img/cover-01.jpg" alt="Aftermath">
+                    </router-link>
+                </div>
+                <div class="book" id="book2">
+                    <router-link to="/book2">
+                        <img src="img/cover-02.jpg" alt="Life Debt">
+                    </router-link>
+                </div>
+                <div class="book" id="book3">
+                    <router-link to="/book3">
+                        <img src="img/cover-03.jpg" alt="Empire's End">
+                    </router-link>
+                </div>
+            </div>
+        </template>
+
+        <template id="book1">
+            <div class="bookpage">
+                <img src="img/cover-01.jpg" alt="Aftermath">
+                <div class="info">
+
+                    <div class="subheader">
+                        <h2>Aftermath: Star Wars</h2>
+                        <router-link to="/">Back</router-link>
+                    </div>
+
+                    <p>As the Empire reels from its critical defeats at the Battle of Endor, the Rebel Alliance—now a fledgling New Republic—presses its advantage by hunting down the enemy’s scattered forces before they can regroup and retaliate. But above the remote planet Akiva, an ominous show of the enemy’s strength is unfolding. Out on a lone reconnaissance mission, pilot Wedge Antilles watches Imperial Star Destroyers gather like birds of prey circling for a kill, but he’s taken captive before he can report back to the New Republic leaders.</p>
+                    <p>Meanwhile, on the planet’s surface, former rebel fighter Norra Wexley has returned to her native world—war weary, ready to reunite with her estranged son, and eager to build a new life in some distant place. But when Norra intercepts Wedge Antilles’s urgent distress call, she realizes her time as a freedom fighter is not yet over. What she doesn’t know is just how close the enemy is—or how decisive and dangerous her new mission will be.</p>
+                    <p>Determined to preserve the Empire’s power, the surviving Imperial elite are converging on Akiva for a top-secret emergency summit—to consolidate their forces and rally for a counterstrike. But they haven’t reckoned on Norra and her newfound allies—her technical-genius son, a Zabrak bounty hunter, and a reprobate Imperial defector—who are prepared to do whatever they must to end the Empire’s oppressive reign once and for all.</p>
+                    <blockquote>
+                        “The Force is strong with Star Wars: Aftermath.”<span>Alternative Nation</span>
+                    </blockquote>
+                    <blockquote>
+                        “If the opening chapter of the Wendig’s Aftermath trilogy is any indication, the ‘Journey to Star Wars: The Force Awakens’ will be every bit as exciting as the movie.”<span>New York Daily News</span>
+                    </blockquote>
+                    <blockquote>
+                        “A wonderful Star Wars adventure by a gifted author.”<span>SF Book Reviews</span>
+                    </blockquote>
+                </div>
+            </div>
+        </template>
+
+        <template id="book2">
+            <div class="bookpage">
+                <img src="img/cover-02.jpg" alt="Life Debt">
+                <div class="info">
+
+                    <div class="subheader">
+                        <h2>Life Debt: Aftermath</h2>
+                        <router-link to="/">Back</router-link>
+                    </div>
+
+                    <p>The Emperor is dead, and the remnants of his former Empire are in retreat. As the New Republic fights to restore a lasting peace to the galaxy, some dare to imagine new beginnings and new destinies. For Han Solo, that means settling his last outstanding debt, by helping Chewbacca liberate the Wookiee’s homeworld of Kashyyyk.</p>
+                    <p>Meanwhile, Norra Wexley and her band of Imperial hunters pursue Grand Admiral Rae Sloane and the Empire’s remaining leadership across the galaxy. Even as more and more officers are brought to justice, Sloane continues to elude the New Republic, and Norra fears Sloane may be searching for a means to save the crumbling Empire from oblivion. But the hunt for Sloane is cut short when Norra receives an urgent request from Princess Leia Organa. The attempt to liberate Kashyyyk has carried Han Solo, Chewbacca, and a band of smugglers into an ambush—resulting in Chewie’s capture and Han’s disappearance.</p>
+                    <p>Breaking away from their official mission and racing toward the Millennium Falcon’s last known location, Norra and her crew prepare for any challenge that stands between them and their missing comrades. But they can’t anticipate the true depth of the danger that awaits them—or the ruthlessness of the enemy drawing them into his crosshairs.</p>
+                    <blockquote>
+                        “Star Wars: Aftermath: Life Debt has found its place at the top of all the new canon works. Simply, outstandingly great Star Wars.”<span>Star Wars Post</span>
+                    </blockquote>
+                    <blockquote>
+                        “Wendig once again strikes gold, offering a sweeping narrative with plenty of insight into both the state of the galaxy at large and beloved characters both new and old.””<span>Alternative Nation</span>
+                    </blockquote>
+                    <blockquote>
+                        “With an intense plot, political intrigue and great characterization, Wendig’s Aftermath: Life Debt is an excellent read.”<span>Flickering Myth</span>
+                    </blockquote>
+                </div>
+            </div>
+        </template>
+
+        <template id="book3">
+            <div class="bookpage">
+                <img src="img/cover-03.jpg" alt="Empire's End">
+                <div class="info">
+                    
+                    <div class="subheader">
+                        <h2>Empire's End: Aftermath</h2>
+                        <router-link to="/">Back</router-link>
+                    </div>
+
+                    <p>The Battle of Endor shattered the Empire, scattering its remaining forces across the galaxy. But the months following the Rebellion’s victory have not been easy. The fledgling New Republic has suffered a devastating attack from the Imperial remnant, forcing the new democracy to escalate their hunt for the hidden enemy..</p>
+                    <p>For her role in the deadly ambush, Grand Admiral Rae Sloane is the most wanted Imperial war criminal—and one-time rebel pilot Norra Wexley, back in service at Leia’s urgent request, is leading the hunt. But more than just loyalty to the New Republic drives Norra forward: Her husband was turned into a murderous pawn in Sloane’s assassination plot, and now she wants vengeance as much as justice.</p>
+                    <p>But Sloane, too, is on a furious quest: pursuing the treacherous Gallius Rax to the barren planet Jakku. As the true mastermind behind the Empire’s devastating attack, Rax has led the Empire to its defining moment. The cunning strategist has gathered the powerful remnants of the Empire’s war machine, preparing to execute the late Emperor Palpatine’s final plan. As the Imperial fleet orbits Jakku, an armada of Republic fighters closes in to finish what began at Endor. Norra and her crew soar into the heart of an apocalyptic clash that will leave land and sky alike scorched. And the future of the galaxy will finally be decided.</p>
+                    <blockquote>
+                        “Star Wars: Aftermath [reveals] what happened after the events of 1983’s Return of the Jedi. It turns out, there’s more than just the Empire for the good guys to worry about.”<span>Hollywood Reporter</span>
+                    </blockquote>
+                    <blockquote>
+                        “The Star Wars universe is fresh and new again, and just as rich and mysterious as it always was.”<span>Den of Geek</span>
+                    </blockquote>
+                </div>
+            </div>
+        </template>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/CSSPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenLite.min.js"></script>
+        <script src="js/vue.js"></script>
+        <script src="js/vue-router.js"></script>
+        <script src="js/app.js"></script>
+        
+    </body>
+</html>
