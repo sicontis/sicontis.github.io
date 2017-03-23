@@ -98,7 +98,8 @@ section {
   width: 300px;
   height: 400px;
   margin: 10px;
-  box-shadow: 10px 10px 30px #333
+  box-shadow: 10px 10px 30px #333;
+  cursor: pointer;
 }
 .book img {
   width: 100%;
@@ -159,6 +160,7 @@ section {
   padding: 0 20px;
   position: relative;
   top: 300px;
+  cursor: pointer;
 }
 
 
