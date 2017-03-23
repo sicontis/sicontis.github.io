@@ -24,19 +24,42 @@ a {
   color: inherit;
 }
 
-.container {
-  width: 100%;
-  max-width: 70%;
+header {
+  width: 100vw;
+  position: fixed;
   margin: 0 auto;
+  z-index: 100;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.changeLogo header {
+  background: rgba(0,0,0,.5);
+}
+.changeLogo .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.changeLogo .logo h1 {
+  font-size: 3em;
+  margin: 0 0 0 40px;
+}
+.changeLogo .logo img {
+  width: 25%;
 }
 
 .logo {
   margin: 0 auto;
-  width: 50%;
-  padding: 40px;
+  width: 30%;
+  padding: 30px;
   text-align: center;
   position: relative;
-  z-index: 2;
+  transition: all .5s;
 }
 .logo h1 {
   font-family: 'Fjalla One', sans-serif;
@@ -44,86 +67,85 @@ a {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-top: 30px;
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+  transition: all .5s;
+}
+.logo img {
+  transition: all .5s;
 }
 #swlogo, #title {
   position: relative;
 }
 
-.bkg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000 url('../img/bkg-03.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.bkg img {
-  width: 100%;
-}
-
-.view {
-  width: 1100px;
-  position: relative;
-  z-index: 4;
-  margin: 0 auto;
-  padding: 10px;
-}
-
 .books {
   width: 100%;
+  max-width: 1000px;
+  height: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .book {
-  width: 340px;
-  height: 440px;
-  padding: 20px;
-  background: #FFFFFF;
-  position: relative;
-}
-.book img {
   width: 300px;
   height: 400px;
-  border: 1px solid #4F6272;
+  margin: 10px;
+  box-shadow: 10px 10px 30px #333
+}
+.book img {
+  width: 100%;
+}
+.book h2 {
+  text-align: center;
+  font-size: 1.7em;
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+  padding: 10px;
 }
 
 .bookpage {
   width: 100%;
-  padding: 20px;
-  z-index: 10;
+  max-width: 1200px;
   display: flex;
   justify-content: flex-start;
-  background: #FFFFFF;
 }
 .bookpage img {
-  width: 360px !important;
-  height: 480px !important;
-  border: 1px solid #4F6272;
-}
-
-.info {
-  width: 100%;
+  width: 360px;
   height: 480px;
-  padding: 0 20px 20px 40px;
-  overflow-y: auto;
 }
-.info h2 {
+.bookpage .info {
+  width: 100%;
+  padding: 20px;
+  margin-left: 40px;
+  background: rgba(255, 255, 255, .9);
+}
+.bookpage .info h2 {
   font-size: 2em;
   font-family: 'Fjalla One', sans-serif;
   text-transform: uppercase;
 }
-.info p {
+.bookpage .info p {
   margin: 10px 0;
   line-height: 2em;
 }
-.info blockquote {
+.bookpage .info blockquote {
   padding: 20px;
   font-style: italic;
   font-size: 1.2em;
   font-weight: 600;
   font-family: serif;
 }
-.info blockquote span {
+.bookpage .info blockquote span {
   display: block;
   text-align: right;
   color: #8E3B46;
@@ -132,16 +154,49 @@ a {
   font-family: sans-serif;
   margin-top: 10px;
 }
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s
+.bookpage i {
+  color: #FFFFFF;
+  padding: 0 20px;
+  position: relative;
+  top: 300px;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
-  opacity: 0
-}
 
-@media screen and (max-width: 499px) and (min-width: 360px) {
-  
 
+
+@media screen and (max-width: 640px) and (min-width: 360px) {
   
+  header {
+    background: rgba(0,0,0,.5);
+  }
+  .logo {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px;
+  }
+  .logo h1 {
+    font-size: 3em;
+    margin: 0 0 0 40px;
+  }
+  .logo img {
+    width: 70%;
+  }
+  #home {
+    display: none;
+  }
+
+  #book1 {
+    width: 100%;
+    
+    margin: 0 auto;
+  }
+  #book1 img {
+    width: 180px;
+    height: 270px;
+  }
+  #book1 .info {
+    width: 100%;
+    margin: 0 0 0 10px;
+  }
+
 }
