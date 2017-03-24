@@ -128,7 +128,20 @@ section {
 }
 
 .btn {
-  padding: 20px;
+  width: 400px;
+  padding: 10px;
+  margin: 0 auto;
+  color: antiquewhite;
+  font-size: 3em;
+  border: 2px solid darkred;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Passion One', cursive;
+  font-weight: 900;
+  transition: all .3s;
+}
+.btn:hover {
+  background: antiquewhite;
   color: darkred;
 }
 

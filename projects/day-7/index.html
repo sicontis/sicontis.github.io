@@ -17,8 +17,10 @@
             </header>
 
             <section>
+
+                <div class="btn" v-if="!showTrailer" @click="showTrailer = true">SHOW TRAILER</div>
                 
-                <div class="vid">
+                <div class="vid" v-if="showTrailer">
                     <iframe 
                         width="560" height="315" 
                         src="https://www.youtube.com/embed/nD9n9btXDjE" 
@@ -56,7 +58,7 @@
             new Vue({
                 el: '#app',
                 data: {
-                    switch: false
+                    showTrailer: false
                 }
             });
         </script>
