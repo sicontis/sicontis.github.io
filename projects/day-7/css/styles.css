@@ -127,6 +127,11 @@ section {
   font-weight: 700;
 }
 
+.btn {
+  padding: 20px;
+  color: darkred;
+}
+
 @media screen and (max-width: 640px) and (min-width: 360px) {
   
   header {

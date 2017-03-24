@@ -2,13 +2,13 @@
 <html>
     <head>
          <meta charset='utf-8'>
-         <title>Template</title>
+         <title>Day 7 - Movie Trailer</title>
          <meta name='viewport' content='width=device-width, initial-scale=1'>
          <link rel="stylesheet" href="css/reset.css">
          <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <div class="container">
+        <div class="container" id="app">
 
             <header>
                 <p>Vertical Entertainment &amp; Screenplay Infinite Films presents</p>
@@ -17,6 +17,7 @@
             </header>
 
             <section>
+                
                 <div class="vid">
                     <iframe 
                         width="560" height="315" 
@@ -25,6 +26,7 @@
                         allowfullscreen>
                     </iframe>
                 </div>
+
             </section>
 
             <section>
@@ -43,13 +45,20 @@
                 </div>
             </section>
 
+            <video playsinline autoplay muted loop id="bgvid">
+                <source src="video/fullscreen.mp4" type="video/mp4">
+            </video>
+
         </div>
 
-        <!--<div id="bgvid">
-            <img src="img/headshot.jpg" alt="">
-        </div>-->
-        <video playsinline autoplay muted loop poster="fullscreen.jpg" id="bgvid">
-            <source src="video/fullscreen.mp4" type="video/mp4">
-        </video>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.5/vue.min.js"></script>
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    switch: false
+                }
+            });
+        </script>
     </body>
 </html>
