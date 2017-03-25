@@ -139,6 +139,7 @@ section {
   font-family: 'Passion One', cursive;
   font-weight: 900;
   transition: all .3s;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, .7);
 }
 .btn:hover {
   background: antiquewhite;

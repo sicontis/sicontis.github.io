@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Rufina:400,700');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  font-family: 'Oxygen', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav, section, footer {
+  width: 100%;
+  max-width: 900px;
+}
+
+header {
+  height: 400px;
+  width: 100%;
+  background-image: url('../img/header.jpg');
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+nav {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav h1 {
+  font-size: 2em;
+  font-family: 'Rufina', serif;
+}
+nav h4 {
+  font-family: initial;
+  font-size: 1em;
+  font-family: 'Oxygen', sans-serif;
+  text-transform: uppercase;
+  color: #016E96;
+}
+
+.hero {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.hero blockquote {
+  width: 50%;
+  font-size: 1.4em;
+  line-height: 1.7em;
+  color: yellow;
+  font-family: 'Rufina', serif;
+  font-style: italic;
+  position: relative;
+  z-index: 10;
+}
+.hero blockquote:before {
+  content: '"';
+  position: absolute;
+  top: 20px;
+  left: -80px;
+  font-size: 8em;
+  z-index: 8;
+  opacity: .5;
+}
+
+.lead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.lead h1 {
+  font-size: 5em;
+}
+.lead h2 {
+  padding-left: 20px;
+  font-size: 1.3em;
+  font-family: 'Rufina', serif;
+  font-style: italic;
+}
+
+.film {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 20px 0 50px 0;
+  border-bottom: 1px dotted #016E96;
+}
+.film img {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 280px;
+  border: 1px solid silver;
+}
+.info {
+  padding: 0 0 0 40px;
+}
+.info h2 {
+  font-family: 'Rufina', serif;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+.info h4 {
+  font-family: 'Rufina', serif;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #016E96;
+}
+.info p {
+  padding: 20px 0;
+  line-height: 1.8em;;
+}
+
+.footer {
+  padding: 30px;
+  text-align: center;
+}
+.footer a {
+  color: #016E96;
+}
+
+@media screen and (max-width: 640px) and (min-width: 360px) {
+  
+  .hero {
+    display: none;
+  }
+  header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+  }
+  .film {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 !important;
+  }
+  .info {
+    padding: 10px;
+  }
+  .info h2, .info h4 {
+    text-align: center;
+  }
+  
+}
