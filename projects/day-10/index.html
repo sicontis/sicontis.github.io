@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset='utf-8'>
+         <title>Day 10 - Photographer</title>
+         <meta name='viewport' content='width=device-width, initial-scale=1'>
+         <link rel="stylesheet" href="css/reset.css">
+         <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container" id="app">
+            <header>
+                <div class="logo">
+                    <img src="img/logo.png">
+                    <h2>Toy Photographer</h2>
+                    <p>See more of his work on <a href="https://www.instagram.com/hot.kenobi/" target="blank">Instagram</a></p>
+                </div>
+                
+            </header>
+
+            <section>
+                <ul class="thumbs">
+                    <li v-for="n in count">
+                        <a class="lightbox" :href="'#pic' + n">
+                            <img :src="'img/photos/pic-' + n + '.jpg'"/>
+                        </a>
+                    </li>
+                </ul>
+             </section>    
+                <div v-for="i in count" class="lightbox-target" :id="'pic' + i">
+                    <img :src="'img/photos/pic-' + i + '.jpg'"/>
+                    <a class="lightbox-close" href="#"></a>
+                </div>
+            
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.5/vue.min.js"></script>
+
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    count: 32
+                }
+            });
+        </script>
+    </body>
+</html>

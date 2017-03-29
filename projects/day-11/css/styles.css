@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Mogra|Shrikhand');
+
+/*
+  fonts
+  -----------------
+  
+  font-family: 'Shrikhand', cursive;
+  font-family: 'Mogra', cursive;
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 30px 0;
+  padding: 20px;
+  background: #0F0E0E;
+}
+
+.navbar {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.navbar ul {
+  display: flex;
+  justify-content: flex-start;
+}
+.navbar ul li {
+  font-family: 'Mogra', cursive;
+  text-transform: uppercase;
+  margin-left: 20px;
+  transition: all .4s;
+}
+.navbar ul li:hover {
+  color: #FF003F;
+  cursor: pointer;
+}
+.logo h1 {
+  font-size: 2.2em;
+  font-family: 'Shrikhand', cursive;
+}
+.logo p {
+  font-family: 'Mogra', cursive;
+  color: #FF003F;
+}
+
+section {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQYV2NkwAIY8Qo2Pfr1v06ODawIv0pkYwDRGAQGbiLi5QAAAABJRU5ErkJggg==') repeat;
+}
+
+.hero {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 100% 50%;
+}
+
+.about {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about h2 {
+  font-size: 2em;
+  font-family: 'Mogra', cursive;
+  text-align: center;
+}
+.about h2 span {
+  color: #FF003F;
+}
+.about p {
+  width: 50%;
+  padding: 30px 0;
+  font-size: 1.2em;
+  line-height: 1.3em;
+  text-align: center;
+  font-style: italic;
+}
+
+footer {
+  padding: 40px;
+  background: #0F0E0E;
+  display: flex;
+  justify-content: space-around;
+  color: #FFFFFF; 
+}
+.infobox {
+  font-size: .9em;
+  color: silver;
+  line-height: 1.2em;
+}
+.infobox h3 {
+  font-size: 1.2em;
+  font-family: 'Mogra', cursive;
+  color: #FF003F;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.infobox ul {
+  display: flex;
+  justify-content: space-around;
+}
+.infobox i {
+  color: #00A2DF;
+  transition: color .4s;
+}
+.infobox i:hover {
+  color: silver;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 640px) and (min-width: 360px) {
+  
+  
+  
+}

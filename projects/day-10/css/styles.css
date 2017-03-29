@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('http://api.thumbr.it/whitenoise-361x370.png?background=ffffff00&noise=626262&density=27&opacity=20'), radial-gradient(ellipse at center, #e50140 0%,#8c000d 100%) repeat;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+}
+
+
+a.lightbox img {
+  height: 150px;
+  border: 3px solid honeydew;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  margin: 5px;
+}
+.lightbox-target {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  background: rgba(0,0,0,.7);
+  width: 100%;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+  overflow: hidden;
+}
+.lightbox-target img {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  bottom: 0;
+  max-height: 0%;
+  max-width: 0%;
+  border: 3px solid white;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  box-sizing: border-box;
+  transition: .5s ease-in-out;
+}
+a.lightbox-close {
+  display: block;
+  width:50px;
+  height:50px;
+  box-sizing: border-box;
+  background: #14BAFC;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: .5s ease-in-out;
+}
+a.lightbox-close:before {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top:10px;
+  transform:rotate(45deg);
+}
+a.lightbox-close:after {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top:10px;
+  transform:rotate(-45deg);
+}
+
+.lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+}
+
+.lightbox-target:target img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+  top: 0px;
+}
+
+section {
+  width: 100%;
+  max-width: 960px;
+  margin: 60px auto;
+}
+
+.thumbs {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.thumbs li {
+  flex: 1;
+}
+
+.logo {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.logo img {
+  height: 100px;
+}
+.logo h2 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  color: honeydew;
+  margin: 20px;
+}
+.logo p {
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+  color: honeydew;
+}
+.logo a {
+  color: #14BAFC;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 640px) and (min-width: 360px) {
+  
+  .thumbs li {
+    flex: 1 0 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .thumbs {
+    flex-direction: column;
+  }
+
+  .thumbs li img {
+    width: 86%;
+    height: auto;
+  }
+
+  .logo {
+    padding: 30px;
+  }
+
+}

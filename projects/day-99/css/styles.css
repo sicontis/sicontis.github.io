@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Varela+Round');
+
+/*
+font-family: 'Varela Round', sans-serif;
+font-family: 'Varela Round', sans-serif;
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJElEQVQYV2NkwAIY4WJ/VH0YWG5vAfEhgiABGGC5vQWPSjRzAcI3CQa412riAAAAAElFTkSuQmCC') repeat;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #FFF;
+  position: relative;
+  z-index: 2;
+}
+
+header {
+  padding: 30px 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(to bottom, #7ae27e 0%,#28c92d 100%);
+}
+header h1 {
+  font-size: 3em;
+  font-family: 'Luckiest Guy', cursive;
+  position: relative;
+  color: honeydew;
+  text-shadow:
+   -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+     2px 2px 0 #000;
+}
+header h3 {
+  font-size: 1.2em;
+  font-family: 'Varela Round', sans-serif;
+  margin-left: 30px;
+  color: #17AA1A;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  padding: 10px 0;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHUlEQVQYV2NkwAIY8QoeOnTov52dHVgRfpXIxgAA0LgEBjT0QwsAAAAASUVORK5CYII=') repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #17AA1A;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav li {
+  font-family: 'Varela Round', sans-serif;
+  color: #17AA1A;
+}
+nav li:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+section#hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner {
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.banner input[type="radio"] {
+  display: none;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 50;
+}
+.controls i {
+  color: #FFAA00;
+}
+
+.promo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  transition: left 0 .7s;
+}
+.promo span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 240px;
+  height: 280px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  background: rgba(23,170,26,.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.promo span h2 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 2.4em;
+  color: #FFAA00;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.promo span h1 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 6em;
+  color: #FFF;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.promo span button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background: #FFAA00;
+  color: honeydew;
+  font-weight: 600;
+  font-size: 1.1em;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 5px;
+  transition: all .5s;
+}
+.promo span button:hover {
+  background: #17AA1A;
+  cursor: pointer;
+}
+
+[id^="slide"]:checked .controls i {
+  color: #000;
+}
+
+[id^="slide"]:checked + .promo {
+  left: 0;
+  z-index: 40;
+  transition: left .6s ease-out;
+}
+
+.quicklinks {
+  width: 290px;
+  padding: 0 5px;
+}
+.link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  height: 32.33%;
+  margin-bottom: 5px;
+  color: honeydew;
+  border-radius: 5px;
+  transition: all .5s;
+}
+.link:hover {
+  color: #000;
+  cursor: pointer;
+}
+.link p {
+  font-family: 'Varela Round', sans-serif;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+.link span {
+  display: block;
+  font-weight: 700;
+}
+.link-1 {
+  background: #FFAA00;
+}
+.link-2 {
+  background: honeydew;
+  color: #000;
+}
+.link-2:hover {
+  background: #000;
+  color: honeydew;
+}
+.link-3 {
+  background: #17AA1A;
+}
+
+.section-head {
+  width: 100%;
+  height: 60px;
+  padding: 10px 20px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHUlEQVQYV2NkwAIY8QoeOnTov52dHVgRfpXIxgAA0LgEBjT0QwsAAAAASUVORK5CYII=') repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #17AA1A;
+  border-bottom: 1px solid #17AA1A;
+}
+.section-head h1 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.4em;
+  color: #17AA1A;
+}
+.section-head span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+.section-head span:hover > i {
+  color: #FFAA00;
+}
+.section-head span i {
+  margin-left: 20px;
+  color: #17AA1A;
+  transition: all .5s;
+}
+
+.section-body {
+  padding: 20px;
+  background: #FFF;
+}
+.section-body ul {
+  display: flex;
+  justify-content: space-around;
+}
+.section-body ul li {
+  flex: 1 0 150px;
+  padding: 5px;
+  text-align: center;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.section-body ul li p {
+  font-size: .9em;
+  padding: 5px 0;
+}
+.section-body ul li p:last-child {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.section-body ul li img {
+  width: 100%;
+}
+
+@media screen and (max-width: 640px) and (min-width: 360px) {
+  
+  
+  
+}
