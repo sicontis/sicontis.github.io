@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	color: #555;
+	
+  background-image: url('http://api.thumbr.it/whitenoise-361x370.png?background=fcfcfcff&noise=626262&density=39&opacity=22');
+}
+
+header {
+  text-align: center;
+  padding: 20px 0 40px 0;
+}
+
+.passion-title {
+  font-size: 4em;
+  font-family: 'Reem Kufi', sans-serif;
+  color: #F91471;
+  text-align: center;
+  text-transform: uppercase;
+}
+.passion-subtitle {
+  font-size: 1.4em;
+  font-family: 'Reem Kufi', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.cocktail {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  background: #FFF;
+  position: relative;
+  border-top: 1px solid #EAEAEA;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+#top-shadow {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#bottom-shadow {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slides {
+  width: 300px;
+  height: 360px;
+  margin-left: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.pic {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: 10;
+  transition: top .7s ease-out;
+}
+
+#drink-1:checked ~ .slides #pic-1,
+#drink-2:checked ~ .slides #pic-2,
+#drink-3:checked ~ .slides #pic-3,
+#drink-4:checked ~ .slides #pic-4,
+#drink-5:checked ~ .slides #pic-5,
+#drink-6:checked ~ .slides #pic-6,
+#drink-7:checked ~ .slides #pic-7,
+#drink-8:checked ~ .slides #pic-8,
+#drink-9:checked ~ .slides #pic-9,
+#drink-10:checked ~ .slides #pic-10 {
+  top: 0;
+  z-index: 100;
+}
+#drink-1:checked ~ .recipes .one,
+#drink-2:checked ~ .recipes .two,
+#drink-3:checked ~ .recipes .three,
+#drink-4:checked ~ .recipes .four,
+#drink-5:checked ~ .recipes .five,
+#drink-6:checked ~ .recipes .six,
+#drink-7:checked ~ .recipes .seven,
+#drink-8:checked ~ .recipes .eight,
+#drink-9:checked ~ .recipes .nine,
+#drink-10:checked ~ .recipes .ten {
+  top: 0;
+  z-index: 100;
+}
+#drink-1:checked ~ .navbar .one,
+#drink-2:checked ~ .navbar .two,
+#drink-3:checked ~ .navbar .three,
+#drink-4:checked ~ .navbar .four,
+#drink-5:checked ~ .navbar .five,
+#drink-6:checked ~ .navbar .six,
+#drink-7:checked ~ .navbar .seven,
+#drink-8:checked ~ .navbar .eight,
+#drink-9:checked ~ .navbar .nine,
+#drink-10:checked ~ .navbar .ten {
+  color: #F91471;
+  font-weight: 600;
+}
+
+[id^="drink"] {
+  display: none;
+}
+
+.recipes {
+  width: 300px;
+  height: 360px;
+  z-index: 200;
+  position: relative;
+}
+.recipes:before {
+  content: '';
+  position: absolute;
+  width: 35px;
+  z-index: -1;
+  top: 0;
+  left: -35px;
+  bottom: 0;
+  right: 0;
+  background-image: url('../img/left-shadow.png');
+}
+.recipes:after {
+  content: '';
+  position: absolute;
+  width: 35px;
+  z-index: -2;
+  top: 0;
+  left: 100%;
+  bottom: 0;
+  right: 0;
+  background-image: url('../img/right-shadow.png');
+}
+.recipes .inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  overflow:hidden;
+}
+
+.info {
+  height: 100%;
+  width: 100%;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 12;
+  background-color: #FFF;
+  transition: top .7s ease-out;
+}
+.info h2 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-family: 'Reem Kufi', sans-serif;
+  color: #F91471;
+  margin-bottom: 20px;
+}
+.info ul {
+  font-size: .8em;
+  margin-bottom: 20px;
+}
+.info li {
+  padding: 4px;
+  font-style: italic;
+}
+.info p {
+  font-size: .8em;
+  line-height: 24px;
+}
+
+.navbar {
+  width: 300px;
+  height: 360px;
+}
+.navbar label {
+  display: block;
+  padding: 20px 5px 0 20px;
+  font-family: 'Reem Kufi', sans-serif;
+  color: #555;
+  font-size: .8em;
+  text-transform: uppercase;
+  transition: color .4s;
+}
+.navbar label:hover {
+  color: #F91471;
+  cursor: pointer;
+}
+
+footer {
+  padding: 20px 0;
+}
+footer ul {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer li {
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 20%;
+  text-align: center;
+  font-family: 'Reem Kufi', sans-serif;
+}
+footer a {
+  font-size: 1.2em;
+}
+footer p {
+  text-align: center;
+  padding: 30px 0;
+  font-size: .8em;
+}
+footer p > a {
+  color: #F91471;
+}
+
+.active {
+  color: #F91471;
+}
+
+#pure:hover {
+  color: #B1B5B7;
+}
+#honey:hover {
+  color: #EEDF90;
+}
+#passion:hover {
+  color: #F91471;
+}
+#kiwi:hover {
+  color: #009B3E;
+}
+#feijoa:hover {
+  color: #C8E3CE;
+}
+
+
+@media screen and (max-width: 640px) and (min-width: 360px) {
+  
+  
+  
+}
