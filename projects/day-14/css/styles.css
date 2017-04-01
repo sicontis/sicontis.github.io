@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Kreon:400,700|Ubuntu');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background: #FBFBF1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #FBFBF1
+}
+
+/* Header
+-----------------------------*/
+header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 36%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo h1 {
+  font-family: 'Kreon', serif;
+  text-transform: uppercase;
+  font-size: 2.4em;
+}
+.logo i {
+  color: #64C4B8;
+}
+
+/* Navbar
+-----------------------------*/
+nav {}
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+}
+nav ul li {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF9000;
+  color: #FBFBF1;
+  border-right: 1px solid #FBFBF1;
+  transition: all .5s;
+}
+nav ul li:hover {
+  cursor: pointer;
+  background: #E35E01;
+}
+
+/* Banner
+-----------------------------*/
+section#banner {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero {
+  width: 600px;
+  height: 280px;
+  background-color: #FFF;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid silver;
+}
+.slide {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  transition: left .5s ease-out;
+}
+.slide h1,h3,h4 {
+  padding: 6px 0;
+}
+.slide h1 {
+  color: #64C4B8;
+  font-size: 5em;
+  font-weight: 700;
+  font-family: 'Kreon', serif;
+}
+.slide h3 {
+  color: #64C4B8;
+  font-size: 1.4em;
+  font-family: 'Kreon', serif;
+}
+.slide h4 {
+  font-size: 1.2em;
+}
+.slide figure {
+  width: 267px;
+  height: 200px;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+[id^="slide"] {
+  display: none;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  z-index: 20;
+  display: flex;
+}
+.buttons label {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.buttons label {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: orange;
+}
+
+#slide-1:checked + #info-1,
+#slide-2:checked + #info-2,
+#slide-3:checked + #info-3
+ {
+  left: 0;
+  z-index: 30;
+}
+#slide-1:checked ~ .buttons .s1,
+#slide-2:checked ~ .buttons .s2,
+#slide-3:checked ~ .buttons .s3
+ {
+  background-color: #000;
+}
+
+.promos {
+  width: 280px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.promo {
+  height: 125px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #FFF;
+  border: 1px solid silver;
+  cursor: pointer;
+}
+.promo:hover h3 {
+  color: #FF9000;
+}
+.promo:hover span {
+  color: #FF9000;
+}
+.promo figure {
+  flex: 1 0 100px;
+}
+.promo img {
+  width: 100%;
+  height: 100%;
+}
+.promo article {
+  flex: 1 0 120px;
+}
+.promo h3,p,span {
+  padding: 5px;
+}
+.promo h3 {
+  color: #64C4B8;
+  font-size: 1.15em;
+  font-family: 'Kreon', serif;
+}
+.promo p {
+  font-size: .8em;
+  line-height: 16px;
+}
+.promo span {
+  display: block;
+  text-align: right;
+  color: #64C4B8;
+}
+
+
+
+/* Featured Products
+-----------------------------*/
+section#products {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAKElEQVQYV2NkQAPXzsz5z4gsBhLQMklhhAvCBECKwILIAmBBdAGQIADNmBND7kCndwAAAABJRU5ErkJggg==') repeat;
+}
+.title {
+  margin: 20px 0;
+  padding: 10px 0 !important;
+  background-color: #968B7C;
+}
+.title h2 {
+  text-align: center;
+  color: #FBFBF1;
+  font-family: 'Kreon', serif;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+.featured {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.product {
+  width: 280px;
+  height: 280px;
+  position: relative;
+  margin: 0 10px 10px;
+  overflow: hidden;
+  border: 1px solid silver;
+}
+.product:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 7px rgba(0,0,0,.4);
+}
+.product img {
+  width: 100%;
+}
+.product h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.15em;
+  text-transform: uppercase;
+  background: rgba(100,196,184, .9);
+}
+
+/* Featured Services
+-----------------------------*/
+section#services {
+  
+}
+
+section#services .title {
+  margin: 0 0 20px 0;
+}
+
+.categories {
+  display: flex;
+  margin: 0 10px 10px;
+}
+.category {
+  flex: 1;
+  padding: 10px;
+  border-right: 1px dotted #FF9000;
+}
+.category h3 {
+  font-size: 1.2em;
+  font-family: 'Kreon', serif;
+  color: #FF9000;
+  text-align: center;
+  font-weight: 700;
+}
+.category img {
+  width: 200px;
+  margin: 10px auto;
+  border: 1px solid silver;
+}
+.category ul {
+  padding: 10px;
+}
+.category li {
+  padding: 5px 0;
+}
+.category li:hover {
+  cursor: pointer;
+  color: #E35E01;
+}
+.category a {
+  color: #FF9000;
+}
+#cat-4 {
+  border-right: none;
+}
+
+
+
+footer {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAKElEQVQYV2NkQAPXzsz5z4gsBhLQMklhhAvCBECKwILIAmBBdAGQIADNmBND7kCndwAAAABJRU5ErkJggg==') repeat;
+  display: flex;
+  padding: 20px;
+}
+.footlink {
+  flex: 1;
+}
+.footlink h3 {
+  font-family: 'Kreon', serif;
+  color: #847664;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .9em;
+}
+.footlink li, p {
+  font-size: .9em;
+  padding: 5px;
+}
+.footlink li:hover {
+  color: #E35E01;
+  cursor: pointer;
+}
+.footlink input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 5px;
+  font-size: .8em;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+.footlink button {
+  border: none;
+  outline: none;
+  font-size: .7em;
+  padding: 5px 10px;
+  background: #847664;
+  color: #F6F1E6;
+  text-transform: uppercase; 
+  border-radius: 5px;
+  position: relative;
+  left: 132px;
+}
+.footlink button:hover {
+  background: #E35E01;
+  cursor: pointer;
+}
+.footlink ul#social {
+  display: flex;
+}
+.footlink ul#social li {
+  color: #847664;
+  font-size: 1.2em;
+}
+.footlink ul#social li:hover {
+  color: #E35E01;
+}
+
+@media screen and (max-width: 640px) and (min-width: 360px) {
+  
+  
+  
+}

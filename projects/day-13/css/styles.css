@@ -76,7 +76,8 @@ header {
 }
 
 .slides {
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   height: 360px;
   margin-left: 20px;
   position: relative;
@@ -208,7 +209,8 @@ header {
 
 .navbar {
   width: 300px;
-  height: 360px;
+  height: 100%;
+  max-height: 360px;
 }
 .navbar label {
   display: block;
@@ -228,7 +230,8 @@ footer {
   padding: 20px 0;
 }
 footer ul {
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -276,6 +279,38 @@ footer p > a {
 
 @media screen and (max-width: 640px) and (min-width: 360px) {
   
-  
-  
+  .container {
+    position: relative;
+  }
+  .cocktail {
+    flex-direction: column;
+  }
+  .navbar {
+    width: 100%;
+    order: 2;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .slides {
+    order: 1;
+  }
+  .navbar label {
+    flex: 1;
+  }
+  footer ul {
+    display: none;
+  }
+  footer p {
+    padding: 10px 0;
+  }
+  .info {
+    text-align: center;
+    height: auto;
+  }
+  .recipes {
+    order: 3;
+  }
+  .recipes:after, 
+  .recipes:before { display: none }
 }
