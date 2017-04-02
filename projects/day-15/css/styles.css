@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600i|Roboto+Condensed:400,700');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #120103;
+  color: #FFFFFF;
+}
+
+header {
+  background: #3e474F;
+  box-shadow: 0 .5em 1em #111111;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 1.6em;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: lightgoldenrodyellow;
+  text-shadow: 2px 2px 7px rgba(0,0,0,.5);
+  padding-left: 20px;
+}
+header h1 span {
+  color: orangered;
+}
+header div {
+  padding-right: 30px;
+}
+header label {
+  color: lightgoldenrodyellow;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 4.25em;
+  font-size: .9em;
+  font-weight: bold;
+  padding: 0 1em;
+  transition: color .4s;
+}
+header label:hover {
+  color: orangered;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-color: #120103;
+  background-position: top left;
+  background-size: cover;
+  transition: left 0s .75s;
+}
+.slide i {
+  opacity: 0;
+  transition: opacity .5s .7s ease-out;
+}
+.slide h1 {
+  width: 50%;
+  font-size: 2.6em;
+  font-family: 'Crimson Text', serif;
+  padding-left: 50px;
+  line-height: 1.2em;
+  color: lightgoldenrodyellow;
+  text-shadow: 3px 3px 10px rgba(0,0,0,.6);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0s .7s ease-out;
+}
+.slide h3 {
+  margin-top: 30px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.6em;
+  text-shadow: 2px 2px 7px rgba(0,0,0,.5);
+  font-weight: 700;
+  padding-left: 50px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0s .7s ease-out;
+}
+.slide h3 span {
+  color: orangered;
+}
+
+.intro {
+  background-image: url('../img/speech-intro.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro h2 {
+  font-size: 3em;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: lightgoldenrodyellow;
+  font-weight: 700;
+  text-shadow: 2px 2px 7px rgba(0,0,0,.5);
+}
+.intro h2 span {
+  color: orangered;
+}
+
+.one {
+  background-image: url('../img/speech-1.jpg');
+}
+.two {
+  background-image: url('../img/speech-2.jpg');
+}
+.three {
+  background-image: url('../img/speech-3.jpg');
+}
+.four {
+  background-image: url('../img/speech-4.jpg');
+}
+.five {
+  background-image: url('../img/speech-5.jpg');
+}
+.six {
+  background-image: url('../img/speech-6.jpg');
+}
+.seven {
+  background-image: url('../img/speech-7.jpg');
+}
+.eight {
+  background-image: url('../img/speech-8.jpg');
+}
+.nine {
+  background-image: url('../img/speech-9.jpg');
+}
+.ten {
+  background-image: url('../img/speech-10.jpg');
+}
+
+[id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left .65s ease-out;
+}
+
+[id^="slide"]:checked + .slide h1 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s .7s ease-out;
+}
+
+[id^="slide"]:checked + .slide h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s 1.2s ease-out;
+}
+
+[id^="slide"]:checked + .slide i {
+  opacity: .5;
+  transition: opacity .5s .7s ease-out;
+}
+
+#slide-0-trigger:checked ~ header #btn-0,
+#slide-1-trigger:checked ~ header #btn-1,
+#slide-2-trigger:checked ~ header #btn-2,
+#slide-3-trigger:checked ~ header #btn-3,
+#slide-4-trigger:checked ~ header #btn-4,
+#slide-5-trigger:checked ~ header #btn-5,
+#slide-6-trigger:checked ~ header #btn-6,
+#slide-7-trigger:checked ~ header #btn-7,
+#slide-8-trigger:checked ~ header #btn-8,
+#slide-9-trigger:checked ~ header #btn-9,
+#slide-10-trigger:checked ~ header #btn-10 {
+  color: orangered;
+}
+
+
+
+
+
+
+/*@media screen and (max-width: 640px) and (min-width: 360px) {
+  
+  
+}*/
