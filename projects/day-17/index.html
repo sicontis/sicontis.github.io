@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset='utf-8'>
+         <title>Day 17 - Clothing/Fashion</title>
+         <meta name='viewport' content='width=device-width, initial-scale=1'>
+         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="css/reset.css">
+         <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header id="menu">
+                <div class="logo">
+                    <h1>WE<span>WEAR</span>COOL</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li>Clothing</li>
+                        <li>Shoes</li>
+                        <li>Suits</li>
+                        <li>Accessories</li>
+                        <li>Collections</li>
+                        <li>Shop Now</li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                </div>
+            </header>
+
+            <section id="hero-1">
+                <div class="figure">
+                    <div class="hero-1">
+                        <img src="img/redford-logo.png">
+                        <h1>Spring Eyewear Collection</h1>
+                    </div>
+                    <img src="img/hero-suits.jpg">
+                </div>
+            </section>
+            <section id="hero-2">
+                <div class="figure">
+                    <div class="hero-2">
+                        <figure>
+                            <img src="img/newman-logo.png">
+                        </figure>
+                        <h1>NOW IN-STORE</h1>
+                    </div>
+                    <img src="img/hero-jackets.jpg">
+                </div>
+            </section>
+            <section>
+                <div class="promos">
+                    <div class="promo-1">
+                        <img src="img/promo-trousers.jpg">
+                        <div class="info">
+                            <h2>MUST HAVE</h2>
+                            <h1>PANTS</h1>
+                            <h1 id="price">$99</h1>
+                            <h3>ON ALL THE</h3>
+                            <h3 id="hoffman">Hoffman</h3>
+                            <h3>COLLECTION</h3>
+                        </div>
+                    </div>
+                    <div class="promo-2">
+                        <img src="img/promo-shirts.jpg">
+                        <div class="info">
+                            <h2>HOT PRICE</h2>
+                            <h1>SHIRTS</h1>
+                            <h1 id="price">$39</h1>
+                            <h3>ON ALL</h3>
+                            <h2 id="sleeves">LONG &amp; SHORT</h2>
+                            <h3>SLEEVE SHIRTS</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="links">
+                    <div class="link">
+                        <h1>Watches</h1>
+                        <img src="img/link-watch.jpg">
+                    </div>
+                    <div class="link">
+                        <h1>Coats</h1>
+                        <img src="img/link-coat.jpg">
+                    </div>
+                    <div class="link">
+                        <h1>Bags</h1>
+                        <img src="img/link-bag.jpg">
+                    </div>
+                    <div class="link">
+                        <h1>Knitwear</h1>
+                        <img src="img/link-knitwear.jpg">
+                    </div>
+                    <div class="link">
+                        <h1>Sunglasses</h1>
+                        <img src="img/link-sunglasses.jpg">
+                    </div>
+                    <div class="link">
+                        <h1>Footwear</h1>
+                        <img src="img/link-shoes.jpg">
+                    </div>
+                    <div class="link">
+                        <h1>Suits</h1>
+                        <img src="img/link-suit.jpg">
+                    </div>
+                    <div class="link">
+                        <h1>Casual Pants</h1>
+                        <img src="img/link-pants.jpg">
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="footlinks">
+                    <div class="foot">
+                        <h3>Help</h3>
+                        <ul>
+                            <li>Contact Us</li>
+                            <li>Shopping FAQs</li>
+                            <li>Shipping &amp; Delivery</li>
+                            <li>Returns &amp; Exchanges</li>
+                            <li>Privacy &amp; Security</li>
+                        </ul>
+                    </div>
+                    <div class="foot">
+                        <h3>WeWearCool</h3>
+                        <ul>
+                            <li>Store Locations</li>
+                            <li>Website Terms &amp; Conditions</li>
+                            <li>About Us</li>
+                            <li>Careers</li>
+                            <li>Corporate Responsibility</li>
+                        </ul>
+                    </div>
+                    <div class="foot">
+                        <h3>Services</h3>
+                        <ul>
+                            <li>Wedding Suit Packages</li>
+                            <li>Corporate &amp; Team Uniforms</li>
+                            <li>Custom Accessories</li>
+                            <li>Groom Room Bookings</li>
+                            <li>The Trim &amp; Shave Shop</li>
+                        </ul>
+                    </div>
+                    <div class="foot">
+                        <h3>Join our Mailing List</h3>
+                        <input type="text" placeholder="Your Email">
+                        <button>Subscribe</button>
+                        <br><br><br>
+                        <h3>Follow Us</h3>
+                        <ul class="social">
+                            <li><i class="fa fa-facebook fa-2x"></i></li>
+                            <li><i class="fa fa-twitter fa-2x"></i></li>
+                            <li><i class="fa fa-google-plus fa-2x"></i></li>
+                            <li><i class="fa fa-instagram fa-2x"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            const menu = document.querySelector('#menu');
+            const topOfMenu = menu.clientHeight;
+
+            function setMenu() {
+                if(window.scrollY >= topOfMenu) {
+                    document.body.classList.add('fixed-nav');
+                } else {
+                    document.body.classList.remove('fixed-nav');
+                }
+            }
+
+            window.addEventListener('scroll', setMenu);
+        </script>
+    </body>
+</html>
