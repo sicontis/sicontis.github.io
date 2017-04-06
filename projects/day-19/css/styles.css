@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Rokkitt|Palanquin+Dark:400,700');
+
+/*
+Fonts
+--------------------------
+font-family: 'Pacifico', cursive;
+font-family: 'Rokkitt', serif;
+font-family: 'Palanquin Dark', sans-serif;
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: serif;
+  background: url('http://api.thumbr.it/whitenoise-361x370.png?background=fffaf2ff&noise=966209&density=15&opacity=15') repeat; 
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  height: 150px;
+}
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 40px;
+  color: #5E4F4F;
+}
+header ul {
+  width: 70%;
+  margin: 40px auto;
+  font-family: 'Rokkitt', serif;
+  display: flex;
+  justify-content: space-around;
+}
+header ul li {
+  font-size: 1.15em;
+  text-transform: uppercase;
+}
+
+section {
+  padding: 20px;
+}
+
+.hero {
+  width: 900px;
+  height: 400px;
+  margin: 0 auto;
+  background-image: url('../img/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border: 1px solid silver;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.hero h1 {
+  color: #FA6E84;
+  font-size: 2em;
+  font-family: 'Pacifico', cursive;
+  margin: 10px 0;
+  text-shadow: 1px 1px 5px rgba(0,0,0,.6);
+}
+.hero h2 {
+  color: rgba(255,255,255,1);
+  font-size: 2.6em;
+  font-family: 'Palanquin Dark', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 10px 0 20px 0;
+  text-shadow: 1px 1px 5px rgba(0,0,0,.6);
+}
+.hero p {
+  color: #FFFFFF;
+  font-size: 1.15em;
+  text-shadow: 1px 0 3px rgba(0,0,0,.8);
+}
+
+.promo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: #5E4F4F;;
+}
+.choc {
+  flex: 1 0 260px;
+  position: relative;
+}
+.choc:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.4);
+}
+.choc img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.choc h3 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #FFFFFF;
+  font-family: 'Palanquin Dark', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-weight: 700;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px 5px rgba(0,0,0,.6);
+}
+
+@media screen and (max-width: 640px) and (min-width: 360px) {
+  
+  
+}

@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Nunito:400,600');
+
+/*
+FONTS
+---------------------------
+font-family: 'Nunito', sans-serif;
+font-family: 'Lora', serif;
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lora', serif;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAANElEQVQoU2NkIBIwEqmOgXyFT58+3SwtLe2LbhOKiSBFMAXoijGsJspEfB4j3zO4TCXaRAC4pwwLV7TtpAAAAABJRU5ErkJggg==') repeat
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  line-height: 1.7em;
+  font-size: .9em;
+}
+
+.container {
+  width: 100%;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border-right: 1px solid #E2E2E2;
+  border-left: 1px solid #E2E2E2;
+}
+
+header, section {
+  width: 100%;
+}
+
+header {
+  height: 80px;
+  background: #064059;
+}
+nav {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  height: 70px;
+}
+nav ul {
+  width: 30%;
+  display: flex;
+}
+nav ul li {
+  margin-left: 20px;
+  font-size: .9em;
+  color: #F0F2EF;
+}
+
+.fixed-nav {
+  position: fixed;
+}
+
+.hero {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.intro {
+  padding: 20px;
+  background: #F2F5FF;
+  display: flex;
+  justify-content: space-between;
+}
+.ship h3 {
+  font-size: 1.175em;
+  font-family: 'Nunito', sans-serif;
+  color: rgba(0,0,0,.7);
+}
+.ship h1 {
+  font-size: 2em;
+  font-family: 'Nunito', sans-serif;
+}
+.stats ul {
+  display: flex;
+}
+.stats li {
+  padding: 5px 20px 5px 0;
+}
+.stats h4 {
+  font-size: 1.4em;
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+}
+.stats p {
+  color: rgba(0,0,0,.7);
+  font-style: italic;
+}
+.details {
+  padding: 30px 20px;
+}
+.details p {
+  margin-bottom: 10px;
+}
+
+.subnav {
+  margin: 0 0 50px 0;
+  background-color: red;
+}
+.subnav ul {
+  width: 100%;
+  display: flex;
+}
+.subnav ul li {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  background-color: #26AFFF;
+  color: #F2F5FF;
+  font-family: 'Nunito', sans-serif;
+  border-right: 2px solid #F2F5FF;
+  transition: background-color .3s;
+}
+.subnav ul li:nth-child(5) {
+  border-right: none;
+}
+.subnav ul li:hover {
+  background-color: #064059;
+  cursor: pointer;
+}
+
+.title {
+  padding: 10px;
+  background: #F2F5FF;
+}
+.title h1 {
+  font-size: 1.5em;
+  font-family: 'Nunito', sans-serif;
+}
+
+.section-1 {
+  padding: 20px;
+}
+.highlight {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted rgba(0,0,0,.5);
+}
+.highlight figure {
+  flex: 1 0 300px;
+  height: 200px;
+}
+.highlight figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.highlight article {
+  padding: 0 0 20px 40px;
+  position: relative;
+}
+.highlight article h3 {
+  font-size: 1.15em;
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 20px;
+}
+.highlight article a {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  font-size: .8em;
+  font-family: 'Nunito', sans-serif;
+  background-color: #FFCA4F;
+}
+.highlight article a i {
+  color: rgba(0,0,0,.6);
+}
+
+.section-2 {
+  padding: 20px;
+}
+.rooms {
+  width: 900px;
+  height: 410px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid silver;
+}
+.rooms section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 100;
+}
+.rooms section h2 {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  padding: 7px 10px;
+  font-family: 'Nunito', sans-serif;
+  background-color: rgba(0,0,0,.5);
+  color: #FFFFFF;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+.rooms section figure {
+  width: 100%;
+  height: 310px;
+  transition: opacity 0 .6s ease-in;
+}
+.rooms section figure img {
+  object-fit: cover;
+}
+.rooms section a {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  font-size: .8em;
+  font-family: 'Nunito', sans-serif;
+  background-color: rgba(255,202,79,.8);
+}
+.rooms section a i {
+  color: rgba(0,0,0,.6);
+}
+.rooms input[type="radio"] {
+  display: none;
+}
+.rooms article {
+  width: 100%;
+  padding: 20px;
+  line-height: 1.7em;
+}
+
+#room-1:checked + .r1,
+#room-2:checked + .r2,
+#room-3:checked + .r3,
+#room-4:checked + .r4,
+#room-5:checked + .r5 {
+  opacity: 1;
+  z-index: 10;
+  transition: opacity .5s ease-in;
+}
+
+.section-3 {
+  padding: 20px;
+}
+.todos {
+  width: 900px;
+  height: 460px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid silver;
+}
+.todos section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 100;
+}
+.todos section h2 {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  padding: 7px 10px;
+  font-family: 'Nunito', sans-serif;
+  background-color: rgba(0,0,0,.5);
+  color: #FFFFFF;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+.todos section figure {
+  width: 100%;
+  height: 310px;
+  transition: opacity 0 .6s ease-in;
+}
+.todos section figure img {
+  object-fit: cover;
+}
+.todos section a {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  font-size: .8em;
+  font-family: 'Nunito', sans-serif;
+  background-color: rgba(255,202,79,.8);
+}
+.todos section a i {
+  color: rgba(0,0,0,.6);
+}
+.todos input[type="radio"] {
+  display: none;
+}
+.todos article {
+  width: 100%;
+  padding: 20px;
+  line-height: 1.7em;
+}
+
+#todo-1:checked + .t1,
+#todo-2:checked + .t2,
+#todo-3:checked + .t3,
+#todo-4:checked + .t4,
+#todo-5:checked + .t5 {
+  opacity: 1;
+  z-index: 10;
+  transition: opacity .5s ease-in;
+}
+
+.menu {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.menu label {
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  font-size: .9em;
+  font-weight: 700;
+  padding: 5px 10px;
+  display: inline-block;
+}
+.menu label:hover {
+  color: #EE6352;
+  cursor: pointer;
+}
+
+.active {
+  color: #EE6352;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.section-4 {
+  padding: 20px;
+}
+.destination {
+  display: flex;
+  justify-content: center;
+}
+.dest {
+  flex: 1 0 300px;
+  height: 400px;
+  margin: 10px;
+  box-shadow: 0 2px 7px rgba(0,0,0,.2);
+}
+.dest figure {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+}
+.dest h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.15em;
+  text-align: center;
+  margin: 10px 0;
+}
+.dest p {
+  padding: 10px;
+  text-align: justify;
+}
+.dest a {
+  display: block;
+  width: 150px;
+  margin: 20px auto 10px auto;
+  padding: 10px;
+  font-size: .8em;
+  font-family: 'Nunito', sans-serif;
+  background-color: #26AFFF;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1.15em;
+  transition: all .3s;
+}
+.dest a:hover {
+  background: #064059;
+}
+
+.section-5 {
+  padding: 20px;
+}
+.gallery {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.gallery img {
+  flex: 1;
+  opacity: .8;
+  transition: opacity .5s;
+}
+.gallery img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+}
+.top {
+  background: #064059;
+  padding: 20px 0;
+}
+.top section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.top section h1 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  color: #F0F2EF;
+  font-family: 'Nunito', sans-serif;
+}
+.top section article {
+  display: flex;
+  align-items: center;
+}
+.top section input {
+  width: 200px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 0;
+  height: 40px;
+  font-size: .8em;
+  color: silver;
+}
+.top section button {
+  border: none;
+  outline: none;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  background: rgba(255,202,79,1);
+}
+.top section button i {
+  font-size: 1.3em;
+  display: inline-block;
+}
+
+
+@media screen and (max-width: 640px) and (min-width: 360px) {
+  
+  
+}
