@@ -4,57 +4,165 @@
          <meta charset='utf-8'>
          <title>Day 19 - Candy:New Product</title>
          <meta name='viewport' content='width=device-width, initial-scale=1'>
+         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
          <link rel="stylesheet" href="css/reset.css">
          <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <div class="container">
+
             <header>
-                <h1>Phillipe's Chocolates</h1>
-                <ul>
-                    <li>Chocolate</li>
-                    <li>Cakes</li>
-                    <li>Breads &amp; Pasteries</li>
-                    <li>Side Products</li>
-                </ul>
+                <h1>Phillipe's</h1>
+                <h3>Chocolates &amp; French Patisserie</h3>
             </header>
 
             <section>
                 <div class="hero">
                     <h1>Introducing</h1>
-                    <h2>Our Easter Collection</h2>
+                    <h2>2017 Easter Collection</h2>
                     <p>Bold new flavours to make this festive season a little different</p>
                 </div>
             </section>
+
+            <div class="ribbon">
+                <ul>
+                    <li class="active">Chocolate</li>
+                    <li>Cakes</li>
+                    <li>Breads &amp; Pasteries</li>
+                    <li>Side Products</li>
+                </ul>
+            </div>
+
             <section>
                 <div class="promo">
                     <div class="choc">
                         <h3>Bayleys</h3>
-                        <img src="img/bayley.jpg">
+                        <a class="lightbox" href="#bayley">
+                            <img src="img/bayley.jpg">
+                        </a>
                     </div>
                     <div class="choc">
                         <h3>Cinnamon</h3>
-                        <img src="img/cinnamon.jpg">
+                        <a class="lightbox" href="#cinnamon">
+                            <img src="img/cinnamon.jpg">
+                        </a>
                     </div>
                     <div class="choc">
                         <h3>Cointreau</h3>
-                        <img src="img/cointreau.jpg">
+                        <a class="lightbox" href="#cointreau">
+                            <img src="img/cointreau.jpg">
+                        </a>
                     </div>
                     <div class="choc">
                         <h3>Mango</h3>
-                        <img src="img/mango.jpg">
+                        <a class="lightbox" href="#mango">
+                            <img src="img/mango.jpg">
+                        </a>
                     </div>
                     <div class="choc">
                         <h3>Orange</h3>
-                        <img src="img/orange.jpg">
+                        <a class="lightbox" href="#orange">
+                            <img src="img/orange.jpg">
+                        </a>
                     </div>
                     <div class="choc">
                         <h3>Provence</h3>
-                        <img src="img/provence.jpg">
+                        <a class="lightbox" href="#provence">
+                            <img src="img/provence.jpg">
+                        </a>
                     </div>
-                    
                 </div>
             </section>
+
+            <section>
+                <div class="boxes">
+                    <img src="img/box.png">
+                    <div class="sizes">
+                        <ul>
+                            <li>Box of 4 chocolates<span>$11.80</span></li>
+                            <li>Box of 6 chocolates<span>$16.80</span></li>
+                            <li>Box of 12 chocolates<span>$32.80</span></li>
+                            <li>Box of 24 chocolates<span>$63.80</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer">
+                    <div class="foot">
+                        <h3>Our Location</h3>
+                        <p>
+                            Philippe's Chocolate<br>
+                            293/295 Great North Road<br>
+                            Auckland 1010<br>
+                            New Zealand
+                        </p>
+                        <img id="map" src="img/map.png">
+                    </div>
+                    <div class="foot">
+                        <h3>Opening Hours</h3>
+                        <ul>
+                            <li><span>Monday</span>7:30am - 4:30pm</li>
+                            <li><span>Tuesday</span>7:00am - 4:30pm</li>
+                            <li><span>Wednesday</span>7:00am - 4:30pm</li>
+                            <li><span>Thurday</span>7:00am - 4:30pm</li>
+                            <li><span>Friday</span>7:00am - 4:30pm</li>
+                            <li><span>Saturday</span>7:00am - 4:30pm</li>
+                            <li><span>Sunday</span>8:00am - 4:30pm</li>
+                        </ul>
+                    </div>
+                    <div class="foot">
+                        <h3>Sitemap</h3>
+                        <ul class="links">
+                            <li>About Us</li>
+                            <li>Chocolates</li>
+                            <li>Bread &amp; Patisserie</li>
+                            <li>Amenties</li>
+                            <li>Contact Us</li>
+                        </ul>
+                        <div class="social">
+                            <h3>Social Media</h3>
+                            <ul>
+                                <li><i class="fa fa-facebook"></i></li>
+                                <li><i class="fa fa-twitter"></i></li>
+                                <li><i class="fa fa-pinterest"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <div class="lightbox-target" id="bayley">
+            <img src="img/bayley.jpg">
+            <p>Dulcey Valrhona Chocolate and Bayleys ganache in Dark Chocolate</p>
+            <a class="lightbox-close" href="#"></a>
+        </div>
+        <div class="lightbox-target" id="cinnamon">
+            <img src="img/cinnamon.jpg">
+            <p>Cream soaked in cinnamon sticks, milk chocolate and butter.</p>
+            <a class="lightbox-close" href="#"></a>
+        </div>
+        <div class="lightbox-target" id="cointreau">
+            <img src="img/cointreau.jpg">
+            <p>Dark chocolate ganache with Cointreau Praline, coated dark Chocolate.</p>
+            <a class="lightbox-close" href="#"></a>
+        </div>
+        <div class="lightbox-target" id="mango">
+            <img src="img/mango.jpg">
+            <p>Mango puree, cream and butter, vanilla, white chocolate</p>
+            <a class="lightbox-close" href="#"></a>
+        </div>
+        <div class="lightbox-target" id="orange">
+            <img src="img/orange.jpg">
+            <p>Orange juice, apricot puree, vanilla, coated dark Chocolate.</p>
+            <a class="lightbox-close" href="#"></a>
+        </div>
+        <div class="lightbox-target" id="provence">
+            <img src="img/provence.jpg">
+            <p>Passionfruit jelly, vanilla coconut ganache with white chocolate.</p>
+            <a class="lightbox-close" href="#"></a>
         </div>
     </body>
 </html>
