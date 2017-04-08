@@ -35,7 +35,8 @@ h3#more {
 }
 
 header {
-  height: 80px;
+  height: 100%;
+  max-height: 80px;
   padding: 0 50px;
   display: flex;
   justify-content: space-between;
@@ -79,6 +80,13 @@ header ul#login li i:hover {
   border: 1px solid #8905B5;
   color: #8905B5;
   cursor: pointer;
+}
+#burger-menu {
+  display: none;
+}
+.burger {
+  display: none;
+  margin: 10px 0;
 }
 
 .hero {
@@ -170,7 +178,8 @@ nav {
 }
 .news ul li {
   flex: 1 0 50%;
-  height: 200px;
+  height: 100%;
+  max-height: 200px;
   margin-bottom: 20px;
   border-bottom: 1px dotted #CECECE;
 }
@@ -185,7 +194,8 @@ article figure {
 }
 article img {
   width: 100%;
-  height: 180px;
+  max-height: 180px;
+  height: 100%;
   object-fit: cover;
   object-position: top center;
 }
@@ -245,6 +255,7 @@ article .info p i {
 }
 .reviews figure {
   width: 100%;
+  max-width: 300px;
   height: 180px;
   position: relative;
   overflow: hidden;
@@ -292,7 +303,8 @@ article .info p i {
 
 footer {
   background: #8905B5;
-  height: 80px;
+  max-height: 80px;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -312,6 +324,7 @@ footer {
 }
 .footer ul {
   display: flex;
+  flex-wrap: wrap;
 }
 .footer li {
   margin: 0 10px;
@@ -320,7 +333,144 @@ footer {
 }
 
 
-@media screen and (max-width: 640px) and (min-width: 360px) {
+@media screen and (max-width: 768px) and (min-width: 480px) {
   
+  header {
+    flex-direction: column;
+    max-height: 100%;
+  }
+  header ul#nav li, header ul#login li {
+    font-size: 1.15em;
+    padding: 10px 0;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero figure {
+    width: 100%;
+  }
+  nav {
+    display: flex;
+    width: 100%;
+    border-left: 0;
+  }
+  .news ul {
+    flex-direction: column;
+  }
+  .reviews ul {
+    flex-direction: column;
+  }
+  .reviews li {
+    width: 100%;
+    display: flex;
+  }
+  .reviews article {
+    padding: 0 20px;
+  }
+  .news, .reviews, .footer {
+    padding: 20px;
+  }
+  .reviews h3 {
+    margin: 0 0 10px 0;
+  }
   
+}
+@media screen and (max-width: 480px) and (min-width: 360px) {
+  
+  header {
+    flex-direction: column;
+    height: 100%;
+    max-height: 100%;
+    padding: 20px 0;
+    border-bottom: none;
+  }
+  header ul#nav {
+    display: none;
+    flex-direction: column;
+  }
+   header ul#login {
+    display: none;
+  }
+  header ul#nav li {
+    font-size: 1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 5px 0;
+  }
+  .news ul, .reviews ul {
+    flex-direction: column;
+  }
+  .reviews, .news {
+    padding: 20px;
+  }
+  .reviews li {
+    width: 100%;
+  }
+  .reviews figure {
+    width: 100%;
+    max-width: 100%;
+  }
+  .reviews h3 {
+    margin: 10px 0;
+  }
+  .news ul li {
+    flex: 1 0 100%;
+    height: 100%;
+    max-height: 100%;
+  }
+  .news article {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .news article figure {
+    flex: 1 0 100%;
+  }
+  .news article figure img {
+    object-fit: cover;
+  }
+  article .info {
+    padding: 0;
+  }
+  .info h3 {
+    margin-top: 10px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer li {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+  }
+  .hero {
+    flex-direction: column
+  }
+  .hero h1 {
+    text-align: center;
+  }
+  .hero figure {
+    width: 100%;
+    height: 300px;
+  }
+  .hero figure h1 {
+    font-size: 1.5em;
+  }
+  nav {
+    width: 100%;
+  }
+  .side h3 {
+    text-align: center;
+  }
+
+  .burger {
+    display: block;
+    
+  }
+  .burger label:hover {
+    cursor: pointer;
+  }
+  #burger-menu:checked ~ ul#nav,
+  #burger-menu:checked ~ ul#login {
+    display: block;
+  }
 }
