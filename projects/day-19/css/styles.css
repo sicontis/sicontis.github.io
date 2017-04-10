@@ -124,6 +124,7 @@ section {
 }
 .hero h1 {
   color: #FA6E84;
+  text-align: center;
   font-size: 2em;
   font-family: 'Pacifico', cursive;
   margin: 10px 0;
@@ -135,12 +136,14 @@ section {
   font-family: 'Palanquin Dark', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+  text-align: center;
   margin: 10px 0 20px 0;
   text-shadow: 1px 1px 5px rgba(0,0,0,.6);
 }
 .hero p {
   color: #FFFFFF;
   font-size: 1.2em;
+  text-align: center;
   text-shadow: 1px 0 3px rgba(0,0,0,.8);
 }
 
@@ -206,7 +209,10 @@ section {
   background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHUlEQVQYV2OM9fNLW7xp0ywGKGCEMTAEYCoxVAAAT/UIBegsz7UAAAAASUVORK5CYII=') repeat;
 }
 .boxes img {
-  height: 300px;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 300px;
 }
 .boxes li {
   font-size: 1.3em;
@@ -231,6 +237,7 @@ section {
   font-size: 1.15em;
   line-height: 1.3em;
   display: flex;
+  flex-wrap: wrap;
 }
 .footer div:last-child {
   border-right: 0;
@@ -372,7 +379,77 @@ a.lightbox-close:after {
   top: 0px;
 }
 
-@media screen and (max-width: 640px) and (min-width: 360px) {
+@media screen and (max-width: 900px) and (min-width: 770px) {
   
+  .ribbon {
+    width: 100%;
+  }
+  .ribbon:before, .ribbon:after {
+    content: " ";
+    display: none;
+  }
   
+}
+@media screen and (max-width: 700px) and (min-width: 640px) {
+  
+  .ribbon ul li {
+    font-size: .9em;
+  }
+  .ribbon:before, .ribbon:after {
+    content: " ";
+    display: none;
+  }
+  .lightbox-target p {
+    width: 90%;
+    bottom: 0;
+  }
+  
+}
+
+@media screen and (max-width: 639px) and (min-width: 360px) {
+  
+  .ribbon {
+    height: 100%;
+  }
+  .ribbon ul {
+    flex-direction: column;
+  }
+  .ribbon ul li {
+    font-size: .9em;
+    padding: 5px 0;
+  }
+  .ribbon:before, .ribbon:after {
+    content: " ";
+    display: none;
+  }
+
+  .boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sizes ul {
+    display: flex;
+  }
+  .sizes ul li {
+    flex: 1;
+    font-size: 1em;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .sizes li span {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .foot {
+    width: 100%;
+    border-right: none;
+  }
+  .lightbox-target p {
+    width: 100%;
+    bottom: 10%;
+  }
 }
