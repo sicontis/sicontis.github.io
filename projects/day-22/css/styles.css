@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Bevan|Hind');
+
+/*
+Fonts
+----------------------------
+font-family: 'Bevan', cursive;
+font-family: 'Hind', sans-serif;
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+  width: 100%;
+}
+
+body {
+  font-family: 'Hind', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+}
+
+header {
+  padding: 20px 0;
+  background: #F4F4F4 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAHUlEQVQYV2NkwAMYqSN55MiR/zY2NnDTqGQsuuMAlzIECP6pRQAAAAAASUVORK5CYII=') repeat;
+}
+
+.subscribe, .popular {
+  background: #F4F4F4 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAHUlEQVQYV2NkwAMYqSN55MiR/zY2NnDTqGQsuuMAlzIECP6pRQAAAAAASUVORK5CYII=') repeat;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.logo h1 {
+  font-size: 2.4rem;
+  font-family: 'Bevan', cursive;
+}
+.logo h1 span {
+  color: #03A7E0;
+}
+.logo:hover {
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  width: 40%;
+}
+nav ul li {
+  color: #000000;
+  margin-left: 20px;
+  font-size: 1.2rem;
+  transition: color .3s;
+}
+nav ul li:hover {
+  color: #03A7E0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.content article {
+  width: 600px;
+}
+.content article h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #03A7E0;
+  font-weight: bold;
+}
+.content article p {
+  padding: 40px 10px;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+.content article p strong {
+  font-weight: bold;
+}
+.tip {
+  margin: 20px 0;
+}
+.tip h1 {
+  font-size: 2rem !important;
+  text-transform: uppercase;
+  color: #000000 !important;
+  margin-bottom: 30px;
+}
+.tip figure {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.tip img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content aside {
+  margin-left: 40px;
+}
+.box {
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  border: 1px solid #E2E2E2;
+}
+.box h2 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #03A7E0;
+}
+.box ul {
+  padding: 5px;
+}
+.box ul li {
+  margin-bottom: 20px;
+}
+.box ul li h3 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.box ul li h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.box ul li a {
+  color: #03A7E0;
+  font-size: .8em;
+}
+.box input {
+  width: 80%;
+  height: 30px;
+  border: 1px solid #000000;
+}
+.box button {
+  width: 18%;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: #03A7E0;
+  color: #FFFFFF;
+  transition: all .3s;
+}
+.box button i {
+  font-size: 16px;
+}
+.box button:hover {
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.search h2, .subscribe h2 {
+  margin-bottom: 5px;
+  border-bottom: none;
+}
+
+.social span {
+  font-weight: bold;
+}
+.social i {
+  margin: 0 5px 0 10px;
+  color: #03A7E0;
+  font-size: 1.2em;
+}
+.social i:hover {
+  cursor: pointer;
+}
+
+.promo {
+  padding: 0 !important;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+.promo img {
+  width: 100%;
+  opacity: .8;
+  transition: opacity .3s;
+}
+.promo h2 {
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: none;
+  text-align: center;
+  font-size: 4em;
+  color: #FFBE22;
+  font-family: 'Bevan', cursive;
+  z-index: 10;
+  text-shadow: 2px 2px 7px rgba(0,0,0,0.7);
+}
+.promo p {
+  width: 100%;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #FFFFFF;
+  z-index: 15;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+.promo small {
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  color: #FFFFFF;
+  z-index: 15;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+.two h2 {
+  color: #FF003F;
+}
+.promo:hover > img {
+  opacity: 1;
+  
+}
+
+footer {
+  padding: 20px 0;
+  background: #F4F4F4 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAHUlEQVQYV2NkwAMYqSN55MiR/zY2NnDTqGQsuuMAlzIECP6pRQAAAAAASUVORK5CYII=') repeat;
+}
+.footer {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer h1 {
+  font-size: 1.6rem;
+  font-family: 'Bevan', cursive;
+}
+.footer h1 span {
+  color: #03A7E0;
+}
+.footer h1:hover {
+  cursor: pointer;
+}
+.footer ul {
+  display: flex;
+}
+.footer ul li {
+  margin: 0 5px;
+  font-size: 0.9em;
+}
+.footer ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 640px) and (min-width: 480px) {
+  
+  .section {
+    flex-direction: column;
+  }
+  .section ul li {
+    font-size: 1em;
+  }
+  .logo {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .logo h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .content article {
+    width: 100%;
+    padding: 20px;
+  }
+  .content article h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  .content aside {
+    width: 100%;
+    padding: 20px;
+    margin-left: 0;
+  }
+  .footer {
+    width: 100%;
+    flex-direction: column;
+  }
+  .footer h1 {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 350px) {
+
+  .section, .content {
+    flex-direction: column;
+  }
+  .logo {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .logo h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+  nav ul {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    font-size: 1em;
+    margin: 2px 5px;
+  }
+  .content article {
+    width: 100%;
+    padding: 10px;
+  }
+  .content article h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  .content article p {
+    padding: 20px 10px;
+    font-size: 1em;
+  }
+  .tip h1 {
+    font-size: 1.4em !important;
+  }
+  .tip figure {
+    height: 200px;
+  }
+  .content aside {
+    margin-left: 0;
+    padding: 10px;
+  }
+  .box h2, .box span {
+    font-size: 1em;
+  }
+  .promo h2 {
+    font-size: 4em;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .footer ul li {
+    font-size: .8em;
+  }
+
+}

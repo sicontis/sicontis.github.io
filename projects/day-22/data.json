@@ -1,0 +1,152 @@
+[
+    {
+        "tip": 1,
+        "title": "Watch The Wine",
+        "desc": "Wine contains 120 calories per 5 oz pour, and it’s easy to overlook those calories. That means that after a few hefty pours you’ve consumed over 400 calories — and that doesn’t include dinner. Cut back to one 5 oz pour a tip, or scale back your drinking overall by 25% and you’ll see a few pounds come off.",
+        "pic": "img/tip-1.jpg"
+    },
+    {
+        "tip": 2,
+        "title": "Get Plenty Of Sleep",
+        "desc": "During sleep, the brain releases human growth hormone (hGH) into the bloodstream. This occurs during the first stage of sleep, but during middle age the body produces less hGH. So if you're in that age bracket and not sleeping well, your efforts to maintain a healthy weight will be compromised. Don't skimp on sleep!",
+        "pic": "img/tip-2.jpg"
+    },
+    {
+        "tip": 3,
+        "title": "Try Some Yoga",
+        "desc": "Yoga’s benefits have been well documented: It increases flexibility, strengthens core muscles, reduces stress, improves circulation (which also has potential sexual benefits) and can improve quality of sleep.",
+        "pic": "img/tip-3.jpg"
+    },
+    {
+        "tip": 4,
+        "title": "Eat Organic",
+        "desc": "Reaching 40 means that you’ve had four decades to accumulate toxins from food and drink, which can lead to obesity. Many of those come from pesticides and hormones in produce and meat. Choose organic fruits and vegetables and hormone-free meat.",
+        "pic": "img/tip-4.jpg"
+    },
+    {
+        "tip": 5,
+        "title": "Change Up Your Exercise",
+        "desc": "It's no surprise that as we age, our metabolism slows down.  Exercising in a different way or at a higher intensity may help get your metabolism back to where it once was. Changing up your routine can increase the speed at which your body is burning calories.",
+        "pic": "img/tip-5.jpg"
+    },
+    {
+        "tip": 6,
+        "title": "Slow Down",
+        "desc": "Work and family commitments can often put a squeeze on mealtime. That gets in the way of losing weight, because we’re not giving our stomachs time to register that we’re full. Divide your plate in two. Eat half, and do something else for 30 minutes. It’ll still be there when you get back, but your hunger may have left the building.",
+        "pic": "img/tip-6.jpg"
+    },
+    {
+        "tip": 7,
+        "title": "Frozen Fruit",
+        "desc": "Freeze some grapes and savor a handful for a long-lasting sweet snack. With this, you get something delicious plus a natural source of antioxidants and other polyphenols that can contribute to heart health and potassium to help lower the risk of high blood pressure – two important concerns as we age.",
+        "pic": "img/tip-7.jpg"
+    },
+    {
+        "tip": 8,
+        "title": "The Colder, The Better",
+        "desc": "A striking new study published in the journal Diabetes suggests that simply turning down the heat in winter may help us attack belly fat while we sleep. Colder temperatures subtly enhance the effectiveness of our stores of brown fat—fat that keeps you warm by helping you burn through the fat stored in your belly.",
+        "pic": "img/tip-8.jpg"
+    },
+    {
+        "tip": 9,
+        "title": "Running On Empty",
+        "desc": "A key element of your strategy for getting fighting fit at 40 is to increase cardio workouts, and to do them in a fasted state. Hit the gym and do some treadmill sprints on an empty stomach to burn fat. Your body is already in a calorie deficit, and it will ignite its fat-burning ability. Glycogen levels are depleted during sleep, so your body will utilize a greater percentage of your body fat as an energy source.",
+        "pic": "img/tip-9.jpg"
+    },
+    {
+        "tip": 10,
+        "title": "Boost Your Metabolism Before Bed",
+        "desc": "Getting older means a slowing metabolism. But having a protein shake before hitting the sack may boost it. Researchers found that men who consumed an evening snack that included 30 grams of protein had a higher resting metabolic rate the next morning than when eating nothing. Protein is more thermogenic than carbs or fat, meaning your body burns more calories digesting it.",
+        "pic": "img/tip-10.jpg"
+    },
+    {
+        "tip": 11,
+        "title": "Snack On The Good Stuff",
+        "desc": "Always be prepared for a busy or unpredictable day by keeping healthy snacks on you, at your desk, in your car. If you have to skip breakfast, lunch, or even dinner during your quest to look your best, you can keep your energy levels up while making healthy choices. Have almonds or other unsalted nuts, apples, bananas, chia bars, protein bars, or other fruit and nut bars close at hand.",
+        "pic": "img/tip-11.jpg"
+    },
+    {
+        "tip": 12,
+        "title": "Build Muscle The Smart Way",
+        "desc": "As we approach 40, our metabolism begins to drop and muscle mass declines. Doing resistance training will help to increase a sluggish metabolism while building muscle mass. Lift two times a week for maintenance and three times a week to see increases in strength gains.",
+        "pic": "img/tip-12.jpg"
+    },
+    {
+        "tip": 13,
+        "title": "Detox Your Liver",
+        "desc": "If you’ve gained girth after 40, it may be a sign that your liver isn’t functioning optimally. Avoiding toxins will help it work more efficiently — and slim your middle. Cut down on sugar, artificial sweeteners and trans fatty acids. Re-evaluate your need for over-the-counter pain relievers and limit your alcohol consumption to just two servings (preferably of red wine) a couple of times a week.",
+        "pic": "img/tip-13.jpg"
+    },
+    {
+        "tip": 14,
+        "title": "Eat More Protein",
+        "desc": "Much of retaining muscle mass is dependent on exercise. Part is down to protein intake. Eat more lean meats, fish and Greek yogurt, and you’ll put the brakes on the deterioration of your fat-burning engines.",
+        "pic": "img/tip-14.jpg"
+    },
+    {
+        "tip": 15,
+        "title": "Eat More Veges",
+        "desc": "Vegetables like leafy greens, peppers and broccoli are naturally lower in calories, so they fill you up without leaving flab behind.",
+        "pic": "img/tip-15.jpg"
+    },
+    {
+        "tip": 16,
+        "title": "Start Weight Training",
+        "desc": "Muscles are what keeps our metabolism high and as we age, our muscles slowly start to get smaller, therefore allowing our metabolism to slow down. Weight training causes you to burn more calories per workout than cardio sessions, and you continue to burn them post workout.",
+        "pic": "img/tip-16.jpg"
+    },
+    {
+        "tip": 17,
+        "title": "Full Fat Foods Are Great",
+        "desc": "Leave the fat-free fake foods behind and enjoy healthy fats that add flavor to your meals and help you fill up with less. Coconut oil, avocado, nuts, seeds, salmon are rich in vitamins and minerals that will keep you young and fill you up on smaller portions, and therefore fewer calories.",
+        "pic": "img/tip-17.jpg"
+    },
+    {
+        "tip": 18,
+        "title": "Pull Ups Are Awesome",
+        "desc": "Pull-ups require a lot of control, and they’re highly effective for building muscle and strength in the upper body — something that diminishes as we age. Pull-ups simultaneously engage the back, shoulders and arms, and by building those three large muscle areas, you’ll help keep your metabolism stoked for years to come.",
+        "pic": "img/tip-18.jpg"
+    },
+    {
+        "tip": 19,
+        "title": "Increase Fiber Intake",
+        "desc": "As we age, our digestive system may need some help keeping us regular. Fiber helps increase gastrointestinal motility and decreases blood sugar. Tip: Aim to get more fiber from less processed sources, such as fresh fruits and vegetables. A good goal is 25 to 38 grams daily.",
+        "pic": "img/tip-19.jpg"
+    },
+    {
+        "tip": 20,
+        "title": "Stay Active",
+        "desc": "Metabolism and hormonal changes in your 40s create an ideal environment for excess fat storage in women – especially in the midsection. In your 40s, activity is essential. How can you pack in extra activity time? Opt to take the stairs, walk or cycle whenever you have the opportunity.",
+        "pic": "img/tip-20.jpg"
+    },
+    {
+        "tip": 21,
+        "title": "Eliminate Artificial Sweetners",
+        "desc": "Yep, you’ve stopped eating sugar, but Splenda, Equal and their ilk aren’t doing you any favors. In fact, research shows that artificial sweeteners can actually cause weight gain. Let go of your sweet ‘crutch’ and limit your sweets altogether,to about  150 to 200 calories of sweets a day.",
+        "pic": "img/tip-21.jpg"
+    },
+    {
+        "tip": 22,
+        "title": "Avoid Eating Late",
+        "desc": "Although you shouldn’t go to bed starving, you also shouldn’t hit the sack completely stuffed. When you eat a large meal before bed, your body works to digest it long into the night — and if your body is still worked up, so are you. The later you fall asleep, the less rest you’ll get, and you’ll wake up feeling groggy and more likely to reach for calorie-dense items.",
+        "pic": "img/tip-22.jpg"
+    },
+    {
+        "tip": 23,
+        "title": "Portion Size Matters",
+        "desc": "You don’t need as much food as you used to. Remember, you're not growing anymore! Eat until you’re 80% full,then stop. In Japan, this method is called hara hachi bun me, which roughly translates to “eat until you are eight parts (out of ten) full. Remember, you can always eat again later.",
+        "pic": "img/tip-23.jpg"
+    },
+    {
+        "tip": 24,
+        "title": "Try Green Tea",
+        "desc": "Green tea blasts away the sort of flab we get more of as we age. Researchers attribute the fat-burning properties of green tea to catechins, specifically EGCG — the name of a group of antioxidative compounds that fry adipose tissue by revving the metabolism, increasing the release of flab from fat cells (particularly in the belly), then speeding up the liver’s fat-burning capacity.",
+        "pic": "img/tip-24.jpg"
+    },
+    {
+        "tip": 25,
+        "title": "Water, Water, Water",
+        "desc": "One of the most important things you can do to lose pounds as you age is to shed water weight. Drinking more water will actually help reduce bloat, as will cutting the amount of salt in your diet — it immediately affects how your kidneys control the water balance in your body. An excess of salt may cause the body to retain water, leading to swelling.",
+        "pic": "img/tip-25.jpg"
+    }
+]

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset='utf-8'>
+         <title>Day 22 - Weight Loss Product/Program</title>
+         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+         <meta name='viewport' content='width=device-width, initial-scale=1'>
+         <link rel="stylesheet" href="css/reset.css">
+         <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container" id="app">
+            <header>
+                <div class="section">
+                    <div class="logo">
+                        <h1>FITNESS<span>BLOG</span></h1>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li>FITNESS</li>
+                            <li>ARTICLES</li>
+                            <li>WORKOUTS</li>
+                            <li>EATING</li>
+                            <li>TRAINERS</li>
+                            <li>SHOP</li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <section>
+                <div class="content">
+                    <article>
+                        <h1>25 Ways To Lose Weight When Your Over 40</h1>
+                        <p><strong>This is 40. You’re wiser. You know yourself. You’re making strides professionally and possibly reproducing. Then, seemingly overnight, you realize that you’re not bouncing back in quite the same way that you did in your 30s.</strong></br></br>
+                        Your metabolism is slowing, and your muscle mass is decreasing. That's a harsh reality, but there are some new tricks for you to learn to keep spry for years, even decades to come. We’ve listed 25 of them for you here so that you needn’t go gentle into that good night.</p>
+                        <div class="tip" v-for="item in tips">
+                            <h1>{{ item.tip }}. {{ item.title }}</h1>
+                            <figure>
+                                <img :src="item.pic">
+                            </figure>
+                            
+                            <p>{{ item.desc }}</p>
+                        </div>
+                    </article>
+                    <aside>
+                        <div class="box social">
+                            <span>
+                                VISIT US ON:
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-google-plus"></i>
+                                <i class="fa fa-tumblr"></i>
+                            </span>
+                        </div>
+                        <div class="box search">
+                            <h2>Search Our Articles</h2>
+                            <input type="text">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                        <div class="box subscribe">
+                            <h2>Subscribe To Our Newsletter</h2>
+                            <input type="text">
+                            <button><i class="fa fa-envelope"></i></button>
+                        </div>
+                        <div class="box latest">
+                            <h2>Latest Articles</h2>
+                            <ul>
+                                <li>
+                                    <h3>12 Hot CrossFit Girls to Folllow on Instagram</h3>
+                                    <p><a href="">Articles > General</a></p>
+                                </li>
+                                <li>
+                                    <h3>The Overtraining Myth</h3>
+                                    <p><a href="">Articles > General</a></p>
+                                </li>
+                                <li>
+                                    <h3>20 Foods That Turn Back Your Metabolic Clock</h3>
+                                    <p><a href="">Eating</a></p>
+                                </li>
+                                <li>
+                                    <h3>Kaley Cuoco's Slimming Secrets</h3>
+                                    <p><a href="">Articles > Celebrity</a></p>
+                                </li>
+                                <li>
+                                    <h3>35 Tricks That Melt Fat Faster</h3>
+                                    <p><a href="">Articles > Workouts</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box popular">
+                            <h2>Popular Articles</h2>
+                            <ul>
+                                <li>
+                                    <h3>Love To Lift Challenge - Day 1</h3>
+                                    <p><a href="">Workouts > Challenges</a></p>
+                                </li>
+                                <li>
+                                    <h3>12 Hot CrossFit Girls to Folllow on Instagram</h3>
+                                    <p><a href="">Articles > General</a></p>
+                                </li>
+                                <li>
+                                    <h3>The Handstand Builder For Women - Day 3</h3>
+                                    <p><a href="">Workouts > Challenges</a></p>
+                                </li>
+                                <li>
+                                    <h3>Top 10 Benefits Of Ketogenic Diets</h3>
+                                    <p><a href="">Eating > General</a></p>
+                                </li>
+                                <li>
+                                    <h3>6 Keys To Thicker &amp; Wider Arms</h3>
+                                    <p><a href="">Articles > General</a></p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="box promo">
+                            <h2>TURBO</h2>
+                            <p>CHEST WORKOUT</p>
+                            <small>
+                                <i class="fa fa-download"></i>
+                                Download PDF
+                            </small>
+                            <img src="img/promo-1.jpg">
+                        </div>
+                        <div class="box promo two">
+                            <h2>BLAST</h2>
+                            <p>HIT WORKOUT</p>
+                            <small>
+                                <i class="fa fa-download"></i>
+                                Download PDF
+                            </small>
+                            <img src="img/promo-2.jpg">
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer">
+                    <h1>FITNESS<span>BLOG</span></h1>
+                    <ul>
+                        <li>ABOUT US</li>
+                        <li>CONTACT US</li>
+                        <li>CONTRIBUTE</li>
+                        <li>TRAINERS</li>
+                        <li>SHOP</li>
+                        <li>TERMS OF SERVICE</li>
+                        <li>PRIVACY</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.1/axios.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
