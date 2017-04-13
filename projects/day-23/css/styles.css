@@ -101,7 +101,7 @@ header section nav ul li:hover {
   left: -70px;
 	width: 0;
 	height: 0;
-	border-bottom: 70px solid rgba(255,255,255, 0.8);
+	border-bottom: 70px solid rgba(255,255,255, 0.9);
 	border-left: 70px solid transparent;
 }
 .cta h3 {
@@ -202,7 +202,7 @@ header section nav ul li:hover {
   width: calc(50% - 70px);
   height: 70px;
   z-index: 85;
-  background: rgba(255,255,255, 0.8);
+  background: rgba(255,255,255, 0.9);
 }
 .latest-title > span {
   display: block;
@@ -220,7 +220,7 @@ header section nav ul li:hover {
   right: -70px;
 	width: 0;
 	height: 0;
-	border-top: 70px solid rgba(255,255,255, 0.8);
+	border-top: 70px solid rgba(255,255,255, 0.9);
 	border-right: 70px solid transparent;
 }
 .latest-title h3 {
