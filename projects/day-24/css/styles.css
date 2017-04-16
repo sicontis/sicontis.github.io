@@ -125,6 +125,7 @@ main aside h2 {
 }
 .sidebox h3 {
   padding: 5px;
+  font-weight: bold;
   background-color: #BFDBF7;
 }
 .sidebox li {
