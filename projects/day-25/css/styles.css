@@ -1,9 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600|Roboto+Condensed');
+
+/*
+Fonts
+--------------------------
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
 * {
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
+html, body {
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 100%;
+  background-image: url('../img/bkg.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
@@ -13,9 +27,223 @@ a {
 
 .container {
   width: 100%;
-  max-width: 900px;
+  height: 100%;
+  max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
+
+nav {
+  width: 300px;
+  height: 70%;
+  position: relative;
+  color: #FFFFFF;
+  background: rgba(0,0,0,0.8);
+}
+nav:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -50px;
+  left: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-top: 50px solid rgba(0,0,0,0.8);
+}
+nav h1, nav h2 {
+  text-align: center;
+}
+nav h1 {
+  width: 330px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background: #F24709;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: relative;
+}
+nav h1:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 0;
+	height: 0;
+	border-top: 15px solid #842403;
+	border-left: 15px solid transparent;
+}
+nav h1:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  width: 0;
+	height: 0;
+	border-top: 15px solid #842403;
+	border-right: 15px solid transparent;
+}
+nav h2 {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+nav img {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav ul {
+  width: 70%;
+  position: absolute;
+  top: 260px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav ul li {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+nav ul li:hover {
+  cursor: pointer;
+  color: #F24709;
+  transition: .3s;
+}
+.social {
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.social i {
+  padding: 0 10px;
+  font-size: 1.2em;
+  color: #F24709;
+}
+.social i:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+  transition: .3s;
+}
+
+main section {
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main article {
+  padding: 20px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 5px solid #FFFFFF;
+  border-bottom: 5px solid #FFFFFF;
+}
+
+.category {
+  width: 400px;
+  padding: 10px;
+  margin: 0 10px;
+  background: #FFFFFF;
+  position: relative;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+  transition: all .3s;
+}
+.category:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.8);
+}
+.category figure {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.category figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.category h1 {
+  width: 50%;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  padding: 10px;
+  background: rgba(242,71,9,0.9);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-left: -15px;
+}
+.category h1:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 0;
+	height: 0;
+	border-top: 15px solid #842403;
+	border-left: 15px solid transparent;
+}
+
+.recipe {
+  width: 260px;
+  height: 340px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+  transition: all .3s;
+}
+.recipe:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.8);
+}
+.recipe:hover h4 {
+  color: #F24709;
+}
+.recipe figure {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.recipe figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.recipe h4 {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  background: rgba(255,253,251,0.8);
+  transition: color .3s;
+}
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 640px) and (min-width: 360px) {
   
