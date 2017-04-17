@@ -1,36 +1,33 @@
-const banner = _('#banner');
-const bannerTop = banner.offsetTop + 100;
+$(document).ready(function(){
 
-function _(el) {
-    return document.querySelector(el);
-}
+    $('#homeBtn').hide();
 
-function changeBanner() {
-    if(window.scrollY >= bannerTop) {
-        document.body.classList.add('changeLogo');
-    } else {
-        document.body.classList.remove('changeLogo');
-    }
-}
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        if (y > 200) {
+        $('body').addClass('changeLogo');
+        } else {
+            $('body').removeClass('changeLogo');
+        }
+        if (y > 850) {
+        $('#homeBtn').fadeIn();
+        } else {
+            $('#homeBtn').fadeOut();
+        }
+    });
 
-window.addEventListener('scroll', changeBanner);
+    $('#b1').on('click', function(){
+        $('html, body').animate({scrollTop: $("#book1").offset().top - 100}, 'easeInOutBounce');
+    });
+    $('#b2').on('click', function(){
+        $('html, body').animate({scrollTop: $("#book2").offset().top - 100}, 'easeInOutBounce');
+    });
+    $('#b3').on('click', function(){
+        $('html, body').animate({scrollTop: $("#book3").offset().top - 100}, 'easeInOutBounce');
+    });
 
-$('#b1').on('click', function(){
-    $('html, body').animate({scrollTop: $("#book1").offset().top - 100}, 'easeInOutBounce');
-});
-$('#b2').on('click', function(){
-    $('html, body').animate({scrollTop: $("#book2").offset().top - 100}, 'easeInOutBounce');
-});
-$('#b3').on('click', function(){
-    $('html, body').animate({scrollTop: $("#book3").offset().top - 100}, 'easeInOutBounce');
-});
+    $('#homeBtn').on('click', function(){
+        $('html, body').animate({scrollTop: $("#home").offset().top}, 'easeInOutBounce');
+    });
 
-$('#hm1').on('click', function(){
-    $('html, body').animate({scrollTop: $("#home").offset().top}, 'easeInOutBounce');
-});
-$('#hm2').on('click', function(){
-    $('html, body').animate({scrollTop: $("#home").offset().top}, 'easeInOutBounce');
-});
-$('#hm3').on('click', function(){
-    $('html, body').animate({scrollTop: $("#home").offset().top}, 'easeInOutBounce');
 });

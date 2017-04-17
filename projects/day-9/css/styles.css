@@ -57,6 +57,10 @@ section {
   border: 10px solid black;
 }
 
+[id^="slide"] {
+  display: none;
+}
+
 .module {
   width: 100%;
   z-index: 20;
@@ -64,14 +68,20 @@ section {
   top: 0;
   left: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   background: #FFFFFF;
   opacity: 0;
   transition: opacity 1.5s;
 }
-.module img {
-  width: 500px;
+.module figure {
+  flex: 1 0 500px;
   height: 400px;
+  overflow: hidden;
+}
+.module figure > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .info {
   padding: 20px;
@@ -148,6 +158,8 @@ section {
   text-align: center;
 }
 .box-4 span img {
+  width: 500px;
+  height: 400px;
   transform: scaleX(-1);
   order: 2;
 }
@@ -166,21 +178,19 @@ section {
 }
 
 .videoWrapper {
-	position: relative;
-	height: 0;
-  overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding-bottom: 45.5%;
+    position: relative;
 }
-.videoWrapper:after {
-  padding-bottom: 56.25%;
-  display: block;
-  content: "";
-}
+
 .videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
 }
 
 #slide-1:checked ~ .box-1,
@@ -217,7 +227,85 @@ section {
   background-color: #000000;
 }
 
-@media screen and (max-width: 699px) and (min-width: 520px) {
+@media screen and (max-width: 640px) and (min-width: 480px) {
   
+  .container {
+    padding: 20px;
+  }
+  header img {
+    width: 200px;
+    height: 50px;
+  }
+  header h1 {
+    font-size: 1.4em;
+  }
+  .module {
+    height: 100%;
+  }
+  .module figure {
+    flex: 1 0 270px;
+    height: 100%;
+  }
+  .module figure > img {
+    object-fit: contain;
+  }
+  .info {
+    height: 100%;
+    border: 1px solid red;
+  }
+  .info h2 {
+    text-align: center;
+  }
+  .videoWrapper {
+    padding-bottom: 60%;
+  }
+  .labels {
+    top: 10px;
+  }
   
+}
+
+@media screen and (max-width: 480px) and (min-width: 360px) {
+
+  .container {
+    padding: 20px;
+  }
+  header img {
+    width: 200px;
+    height: 50px;
+  }
+  header h1 {
+    font-size: 1.4em;
+  }
+  section {
+    max-height: 100%;
+    border: 0;
+  }
+  .module {
+    flex-direction: column;
+    align-items: center;
+  }
+  .module figure {
+    flex: 1 0 270px;
+    height: 100%;
+  }
+  .module figure > img {
+    object-fit: contain;
+  }
+  .info {
+    height: 100%;
+  }
+  .labels {
+    top: 10px;
+  }
+  .box-4 span img {
+    width: 100%;
+    height: 100%;
+  }
+  .videoWrapper {
+    padding-bottom: 80%;
+  }
+  .box-4 span .info {
+    top: 50px;
+  }
 }

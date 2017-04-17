@@ -31,7 +31,8 @@ header {
   width: 100%;
   background-image: url('../img/header.jpg');
   background-size: cover;
-  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 nav {
@@ -55,15 +56,15 @@ nav h4 {
 
 .hero {
   width: 100%;
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
   padding-top: 100px;
 }
 .hero blockquote {
-  width: 50%;
+  width: 40%;
   font-size: 1.4em;
   line-height: 1.7em;
-  color: yellow;
+  color: #016E96;
   font-family: 'Rufina', serif;
   font-style: italic;
   position: relative;
