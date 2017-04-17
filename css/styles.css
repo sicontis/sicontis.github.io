@@ -28,9 +28,12 @@ header, section {
 }
 
 header {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 header h1 {
@@ -88,17 +91,27 @@ header h1 span {
   margin-bottom: 20px;
 }
 .work ul {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .work li {
   border: 1px solid silver;
   padding: 30px;
   text-align: center;
   text-transform: uppercase;
-  flex: 1 0 40%;
+  -ms-flex: 1 0 40%;
+      flex: 1 0 40%;
   margin: 10px;
+  transition: all .3s;
+}
+.work li:hover {
+  cursor: pointer;
+  background: #D72638;
+  border: 1px solid #D72638;
 }
 .work li h3 {
   font-size: 1.5em;
@@ -111,7 +124,8 @@ header h1 span {
     padding: 20px;
   }
   header {
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .about {
     padding: 20px;

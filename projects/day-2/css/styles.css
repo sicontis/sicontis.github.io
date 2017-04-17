@@ -68,9 +68,12 @@ body {
   height: 300px;
   padding: 50px;
   background-color: #D8973C;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   background: linear-gradient(
       rgba(216, 151, 60, .7), 
       rgba(216, 151, 60, .7)
@@ -119,10 +122,14 @@ body {
   color: #FFFFFF;
   font-size: 1.2em;
   line-height: 2em;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   position: relative;
   background: linear-gradient(
       rgba(164, 36, 59, .7), 
@@ -180,10 +187,14 @@ body {
 
 .speaker {
   height: 170px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 20px;
   border-bottom: 1px dotted rgba(164, 36, 59, 1);
 }
@@ -191,7 +202,8 @@ body {
   border-radius: 50%;
 }
 .speaker div {
-  flex: 1 0 60%;
+  -ms-flex: 1 0 60%;
+      flex: 1 0 60%;
 }
 .speaker h4 {
   font-weight: 600;
@@ -211,9 +223,12 @@ body {
   padding: 30px 50px;
   position: relative;
   color: #FFFFFF;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
 }
 .accept h3 {
   font-family: 'Catamaran', sans-serif;
@@ -232,8 +247,10 @@ body {
 }
 .btn-group {
   margin: 0 auto;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .btn-group button {
   margin: 10px;
@@ -246,7 +263,7 @@ body {
 }
 
 
-@media screen and (max-width: 500px) and (min-width: 360px) {
+@media screen and (max-width: 640px) and (min-width: 360px) {
   
   .speaker {
     text-align: center;
@@ -256,8 +273,10 @@ body {
     margin: 0 auto;
   }
   .btn-group {
-    flex-direction: column;
-    justify-content: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
   .accept p {
     text-align: center;

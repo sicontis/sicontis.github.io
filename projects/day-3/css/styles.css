@@ -33,19 +33,26 @@ article {
 
 header {
   height: 260px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
   background: url('../img/auckland-banner.png') no-repeat; 
   background-size: 100% 100%;
 }
 
 footer {
   height: 100px;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   background: url('../img/auckland-banner.png') no-repeat;
 }
 footer a {
@@ -57,9 +64,12 @@ footer a {
   background-color: rgba(24, 29, 39, .8);
   padding: 20px;
   position: relative;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
 }
 .title:after {
   content: '';
@@ -86,10 +96,12 @@ footer a {
 }
 .title i {
   color: #ED912F;
-  flex: 1 0 50px;
+  -ms-flex: 1 0 50px;
+      flex: 1 0 50px;
 }
 .title div {
-  flex: 1 0 300px;
+  -ms-flex: 1 0 300px;
+      flex: 1 0 300px;
   padding-right: 20px;
 }
 
@@ -123,9 +135,12 @@ footer a {
 }
 
 .logos {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
   padding: 20px 20px 0 0;
 }
 .logos img {
@@ -135,6 +150,7 @@ footer a {
 
 .place {
   position: relative;
+  display: -ms-flexbox;
   display: flex;
 }
 .place .title-sm {
@@ -151,7 +167,8 @@ footer a {
   background: #FFFFFF;
   padding: 10px;
   font-size: 1.2em;
-  transform: translate(-70px, -5px);
+  -ms-transform: translate(-70px, -5px);
+      transform: translate(-70px, -5px);
   font-family: 'Roboto Slab', serif;
   font-style: italic;
 }
@@ -164,14 +181,17 @@ footer a {
 
 .slides {
   height: 330px;
-  flex: 1 0 600px;
+  -ms-flex: 1 0 600px;
+      flex: 1 0 600px;
+  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
 }
 
 @media screen and (max-width: 880px) and (min-width: 500px) {
   .place {
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .pics img {
     width: 100%;
@@ -181,7 +201,8 @@ footer a {
     background: #FFFFFF;
     padding: 10px;
     font-size: 1.2em;
-    transform: translate(-10px, -5px);
+    -ms-transform: translate(-10px, -5px);
+        transform: translate(-10px, -5px);
     font-family: 'Roboto Slab', serif;
     font-style: italic;
   }
@@ -197,7 +218,8 @@ footer a {
     display: none;
   }
   .place {
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .title-sm {
     width: 100%;

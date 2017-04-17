@@ -39,9 +39,12 @@ header, section, footer {
 
 header {
   padding: 30px 0;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .logo {
@@ -57,8 +60,10 @@ header {
 }
 
 .menu {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
 }
 .menu li {
   padding: 5px 20px;
@@ -76,8 +81,10 @@ header {
   height: 300px;
   background: url('../img/hero-banner.jpeg') no-repeat center center;
   background-size: cover;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .hero-title {
@@ -86,9 +93,12 @@ header {
   background: #FFF url('../img/stripe.png');
   height: 70px;
   border: 1px dashed #8B899F;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 .hero-title h1 {
   text-align: center;
@@ -112,6 +122,7 @@ header {
 
 .shatner, .nimoy, .uhura, .pablo {
   width: 100%;
+  display: -ms-flexbox;
   display: flex;
   background: #FFFFFF;
 }
@@ -122,10 +133,14 @@ header {
 .info {
   width: 40%;
   height: 400px;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
   background: #FFF url('../img/stripe.png');
 }
 .info h1 {
@@ -158,8 +173,10 @@ header {
 
 .links {
   height: 80px;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 .links i {
   font-size: 20px;
@@ -177,7 +194,8 @@ header {
   border-left: 1px dashed #8B899F;
 }
 .shatner .links {
-  justify-content: flex-end;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
   border-left: 1px dashed #8B899F;
 }
 
@@ -186,7 +204,8 @@ header {
   border-right: 1px dashed #8B899F;
 }
 .nimoy .links {
-  justify-content: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   border-right: 1px dashed #8B899F;
 }
 
@@ -195,7 +214,8 @@ header {
   border-left: 1px dashed #8B899F;
 }
 .uhura .links {
-  justify-content: flex-end;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
   border-left: 1px dashed #8B899F;
 }
 
@@ -204,7 +224,8 @@ header {
   border-right: 1px dashed #8B899F;
 }
 .pablo .links {
-  justify-content: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   border-right: 1px dashed #8B899F;
 }
 
@@ -221,16 +242,19 @@ header {
 }
 
 
-@media screen and (max-width: 500px) and (min-width: 360px) {
+@media screen and (max-width: 640px) and (min-width: 360px) {
   
   header {
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
 
   .menu {
     margin-top: 20px;
-    flex-direction: column;
-    align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
   }
 
   .about {
@@ -239,16 +263,17 @@ header {
 
   .shatner, .uhura {
     border-top: 1px dashed #8B899F;
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .nimoy, .pablo {
     border-top: 1px dashed #8B899F;
-    flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
   }
 
   .info {
     width: 100%;
-    border: none !important;
   }
 
   .pic {
@@ -261,20 +286,26 @@ header {
   }
   .links {
     height: 50px;
-    border: none !important;
+    border-top: 1px dashed #8B899F;
+    border-left: 0 !important;
+    border-right: 0 !important;
   }
 
-  .shatner .links {
-    justify-content: center;
-  }
-  .nimoy .links {
-    justify-content: center;
-  }
+  .shatner .links, 
+  .pablo .links, 
+  .nimoy .links, 
   .uhura .links {
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
-  .pablo .links {
-    justify-content: center;
+
+  .shatner .info, 
+  .nimoy .info, 
+  .uhura .info, 
+  .pablo .info {
+    border: none;
   }
   
 }
