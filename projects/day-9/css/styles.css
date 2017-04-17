@@ -28,16 +28,22 @@ a {
 
 .container {
   width: 100%;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
   padding: 80px;
 }
 
 header {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
   margin-bottom: 80px;
 }
 header img {
@@ -67,14 +73,17 @@ section {
   position: absolute;
   top: 0;
   left: 0;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   background: #FFFFFF;
   opacity: 0;
   transition: opacity 1.5s;
 }
 .module figure {
-  flex: 1 0 500px;
+  -ms-flex: 1 0 500px;
+      flex: 1 0 500px;
   height: 400px;
   overflow: hidden;
 }
@@ -97,9 +106,12 @@ section {
 }
 
 .box-1 .info span {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
   padding: 10px;
 }
 .box-1 .info span img {
@@ -112,9 +124,12 @@ section {
 }
 
 .box-2 .info span {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
   padding: 10px;
 }
 .box-2 .info span img {
@@ -129,9 +144,12 @@ section {
 }
 
 .box-3 .info span {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
   padding: 10px;
   margin-top: 30px;
 }
@@ -151,20 +169,26 @@ section {
 .box-4 span {
   width: 100%;
   height: 100%;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #F8F8F8;
   text-align: center;
 }
 .box-4 span img {
   width: 500px;
   height: 400px;
-  transform: scaleX(-1);
-  order: 2;
+  -ms-transform: scaleX(-1);
+      transform: scaleX(-1);
+  -ms-flex-order: 2;
+      order: 2;
 }
 .box-4 span .info {
-  order: 1;
+  -ms-flex-order: 1;
+      order: 1;
   width: 100%;
   position: absolute;
   top: 100px;
@@ -243,7 +267,8 @@ section {
     height: 100%;
   }
   .module figure {
-    flex: 1 0 270px;
+    -ms-flex: 1 0 270px;
+        flex: 1 0 270px;
     height: 100%;
   }
   .module figure > img {
@@ -282,11 +307,14 @@ section {
     border: 0;
   }
   .module {
-    flex-direction: column;
-    align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
   }
   .module figure {
-    flex: 1 0 270px;
+    -ms-flex: 1 0 270px;
+        flex: 1 0 270px;
     height: 100%;
   }
   .module figure > img {
