@@ -276,7 +276,6 @@ section {
   }
   .info {
     height: 100%;
-    border: 1px solid red;
   }
   .info h2 {
     text-align: center;
