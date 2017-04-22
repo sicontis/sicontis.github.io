@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset='utf-8'>
+         <title>Day 26 - Game's Official Site</title>
+         <meta name='viewport' content='width=device-width, initial-scale=1'>
+         
+         <link href="css/jquery.bxslider.min.css" rel="stylesheet" />
+         <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
+         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="css/reset.css">
+         <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container" id="app">
+
+            <nav>
+                <h1><a class="slideto" href="#home">HITMAN</a></h1>
+                <ul class="main-nav">
+                    <li><a class="slideto" href="#about">STORY</a></li>
+                    <li><a class="slideto" href="#features">FEATURES</a></li>
+                    <li><a class="slideto" href="#media">MEDIA</a></li>
+                    <li><a class="slideto" href="#buy">BUY IT</a></li>
+                </ul>
+            </nav>
+
+            <header id="home">
+
+                <video 
+                    playsinline 
+                    muted 
+                    loop 
+                    autoplay 
+                    poster="img/bkg.jpg" id="bgvid">
+                    <source src="video/hitman.mp4" type="video/mp4">
+                </video>
+
+                <div class="logo">
+                    <img src="img/logo-square-white.png">
+                    <h2>PRESENTS</h2>
+                    <h1>HITMAN</h1>
+                    <h3>THE COMPLETE FIRST SEASON</h3>
+                </div>
+
+                <div class="arrow">
+                    <a class="slideto" href="#about">
+                        <i class="fa fa-angle-double-down"></i>
+                    </a>
+                </div>
+
+            </header>
+
+            <section id="about">
+
+                <h1>Enter A World Of Assassination</h1>
+
+                <div class="about-txt">
+                    <h3>THE STORY</h3>
+                    <p>There is a world beyond yours. Beyond nations, justice, ethics.</p>
+                    <p>It never sleeps. It exists everywhere. And once you enter....there is no going back.</p>
+                    <p>Welcome to the World of Assassination. You are Agent 47, the world´s ultimate assassin.</p>
+                    <p>Backed by your long term handler, Diana Burnwood and the power of the International Contract Agency you operate on all continents across the globe to unravel a conspiracy originating from the highest echelons of the world's power elite.</p>
+                </div>
+
+                <div class="about-txt">
+                    <h3>THE GAME</h3>
+                    <p>Become the Master Assassin in this intense spy-thriller story. As Agent 47 you perform contract hits on powerful, high-profile targets in exotic locations around the world, in this creative stealth action game.</p>
+                    <p>Gameplay focuses on taking out targets in huge and intricate sandbox levels with complete freedom of approach. Where to go, when to strike and who to kill - it is all up to you.</p>
+                </div>
+
+                <div class="arrow">
+                    <a class="slideto" href="#features">
+                        <i class="fa fa-angle-double-down"></i>
+                    </a>
+                </div>
+
+            </section>
+
+            <section id="features">
+
+                <div class="overlay"></div>
+
+                <div class="featurebox">
+
+                    <div class="feature">
+                        <img src="img/clock.png">
+                        <h1><span>100+</span> Hours Of Gameplay</h1>
+                    </div>
+
+                    <div class="feature">
+                        <img src="img/mask.png">
+                        <h1><span>110</span> Unique Disguises</h1>
+                    </div>
+
+                    <div class="feature">
+                        <img src="img/gun.png">
+                        <h1><span>100</span> Types Of Weapons</h1>
+                    </div>
+
+                    <div class="feature">
+                        <img src="img/target.png">
+                        <h1><span>20</span> Elusive Targets</h1>
+                    </div>
+
+                    <div class="feature">
+                        <img src="img/trophy.png">
+                        <h1><span>600</span> In-Game Challenges</h1>
+                    </div>
+
+                    <div class="feature">
+                        <img src="img/bonus.png">
+                        <h1><span>3</span> Bonus Missions</h1>
+                    </div>
+
+                    <div class="feature">
+                        <img src="img/contract.png">
+                        <h1><span>44</span> Escalation Contracts</h1>
+                    </div>
+
+                </div>
+
+                <div class="locations">
+                    <h1>6 Exotic Locations</h1>
+                    <div class="countries">
+                    
+                        <ul class="slider-2">
+                            <li><img src="img/paris.jpg"></li>
+                            <li><img src="img/marrakesh.jpg"></li>
+                            <li><img src="img/sapienza.jpg"></li>
+                            <li><img src="img/bangkok.jpg"></li>
+                            <li><img src="img/colorado.jpg"></li>
+                            <li><img src="img/hokkaido.jpg"></li>
+                        </ul>
+
+                        <ul class="bx-pager">
+                            <li>
+                                <a data-slide-index="0" href="">Paris</a>
+                            </li>
+                            <li>
+                                <a data-slide-index="1" href="">Marrakesh</a>
+                            </li>
+                            <li>
+                                <a data-slide-index="2" href="">Sapienza</a>
+                            </li>
+                            <li>
+                                <a data-slide-index="3" href="">Bangkok</a>
+                            </li>
+                            <li>
+                                <a data-slide-index="4" href="">Colorado</a>
+                            </li>
+                            <li>
+                                <a data-slide-index="5" href="">Hokkaido</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="arrow">
+                    <a class="slideto" href="#media">
+                        <i class="fa fa-angle-double-down"></i>
+                    </a>
+                </div>
+
+            </section>
+
+            <section id="media">
+
+                <div class="trailers">
+                    <h1>TRAILER</h1>
+                    <div class="trailer">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lKv7hvO8Bm8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="gallery">
+                    <h1>GALLERY</h1>
+                    <div class="slideshow">
+                        <ul class="slider">
+                            <li><img src="img/shot-1.jpg"></li>
+                            <li><img src="img/shot-2.jpg"></li>
+                            <li><img src="img/shot-3.jpg"></li>
+                            <li><img src="img/shot-4.jpg"></li>
+                            <li><img src="img/shot-5.jpg"></li>
+                            <li><img src="img/shot-6.jpg"></li>
+                            <li><img src="img/shot-7.jpg"></li>
+                            <li><img src="img/shot-8.jpg"></li>
+                            <li><img src="img/shot-9.jpg"></li>
+                            <li><img src="img/shot-10.jpg"></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+
+                <div class="arrow">
+                    <a class="slideto" href="#buy">
+                        <i class="fa fa-angle-double-down"></i>
+                    </a>
+                </div>
+
+            </section>
+
+            <section id="buy">
+
+                <div class="reviews">
+
+                    <div class="review">
+                        <blockquote>
+                            "Perfectly Crafted"
+                        </blockquote>
+                        <p>GamesRadar+</p>
+                    </div>
+                    <div class="review">
+                        <blockquote>
+                            "A Constant Delight"
+                        </blockquote>
+                        <p>Eurogamer</p>
+                    </div>
+                    <div class="review">
+                        <blockquote>
+                            "Simply Gorgeous"
+                        </blockquote>
+                        <p>TheSixThaxis+</p>
+                    </div>
+                    <div class="review">
+                        <blockquote>
+                            "One Of My Favourite Games Of The Year"
+                        </blockquote>
+                        <p>PC Gamer</p>
+                    </div>
+                    <div class="review">
+                        <blockquote>
+                            "I Loved Every Moment Of It"
+                        </blockquote>
+                        <p>Kotaku UK</p>
+                    </div>
+                    <div class="review">
+                        <blockquote>
+                            "One Level Of Hitman Lasts Longer Than Most Games"
+                        </blockquote>
+                        <p>GamesRadar+</p>
+                    </div>
+                    <div class="review">
+                        <blockquote>
+                            "Meticulous In Action"
+                        </blockquote>
+                        <p>VG247</p>
+                    </div>
+
+                </div>
+
+                <div class="details">
+                    <div class="cases">
+                        <img src="img/cover-ps4.png">
+                        <img src="img/cover-xbox.png">
+                        <div class="buy">
+                            <h3>Buy Now At</h3>
+                            <ul>
+                                <li>EB Games</li>
+                                <li>JB Hi-Fi</li>
+                                <li>Noel Leemings</li>
+                                <li>The Warehouse</li>
+                                <li>Harvey Normans</li>
+                                <li>Game Planet</li>
+                                <li>NZ Gameshop</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="logos">
+                        <ul>
+                            <li>
+                                <img src="img/logo-ps4.png">
+                            </li>
+                            <li>
+                                <img src="img/logo-xbox.png">
+                            </li>
+                            <li>
+                                <img src="img/logo-steam.png">
+                            </li>
+                            <li>
+                                <img src="img/logo-square.png">
+                            </li>
+                            <li>
+                                <img src="img/logo-io.png">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="censor">
+                        <img src="img/censor-label.png">
+                        <p>Contains material that is considered unsuitable for exhibition by persons under the age of 18. People under 18 may not legally buy, rent, exhibit or view R18+ classified content. A person may be asked for proof of their age before purchasing, hiring or viewing an R18+ film or computer game at a retail store or cinema.</p>
+                    </div>
+                </div>
+
+                <div class="arrow">
+                    <a class="slideto" href="#home">
+                        <i class="fa fa-angle-double-up"></i>
+                    </a>
+                </div>
+                
+            </section>
+                                            
+        </div>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
