@@ -294,7 +294,7 @@ section#episodes {
   display: flex;
 }
 .season img {
-  width: 190px;
+  flex: 1 0 190px;
   height: 260px;
 }
 .season ul {
