@@ -18,6 +18,7 @@ a {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
+  padding-top: 50px;
   background: #FFF url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAALklEQVQYV2P8v08xjdHp/iwGLIARJIZLAVgSlwK4JDYFKJLoCjAkkRVglYQpAADxyxpMKE6TXwAAAABJRU5ErkJggg==') repeat;
 }
 
@@ -26,6 +27,7 @@ nav {
   max-width: 900px;
   margin: 0 auto;
   position: fixed;
+  top: 0;
   z-index: 80;
   padding:  10px 20px;
   display: flex;
@@ -54,9 +56,6 @@ nav ul {
 .menu .active {
   color: #E20A16;
   font-weight: bold;
-}
-[href="#home"] .active {
-  text-decoration: none !important;
 }
 
 
