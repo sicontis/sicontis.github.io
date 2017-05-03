@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset='utf-8'>
+         <title>Day 28 - Digital Agency</title>
+         <meta name='viewport' content='width=device-width, initial-scale=1'>
+         <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="css/reset.css">
+         <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <div id="loader">
+            <img src="img/cube.svg">
+        </div>
+
+        <div class="menu">
+            <h2><a class="slideto" href="#home">Ma'ani</a></h2>
+            <div>
+                <ul id="nav">
+                    <li><a class="slideto" href="#about">About</a></li>
+                    <li><a class="slideto" href="#services">Services</a></li>
+                    <li><a class="slideto" href="#work">Our Work</a></li>
+                    <li><a class="slideto" href="#contact">Contact</a></li>
+                </ul>
+
+                <i id="burger" class="fa fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="container" id="home">
+
+            <header>
+                
+                <div class="hero">
+                    <h1>Ma'ani</h1>
+                    <hr>
+                    <p>means to prepare, to build, to create...</p>
+                    <p>Something we love doing everyday.</p>
+                    <ul>
+                        <li><a class="slideto" href="#about">About</a></li>
+                        <li><a class="slideto" href="#services">Services</a></li>
+                        <li><a class="slideto" href="#work">Our Work</a></li>
+                        <li><a class="slideto" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <video 
+                    playsinline 
+                    muted 
+                    loop 
+                    autoplay 
+                    poster="img/bkg2.jpg"
+                    id="bgvid">
+                    <!--<source src="video/bkg.mp4" type="video/mp4">-->
+                </video>
+            </header>
+
+            <section id="about">
+                <h2>About Ma'ani</h2>
+                <hr>
+                <p class="intro">
+                    Ma'ani was formed out of a love for design and creative technologies. We embrace whole heartedly new and exciting digital media and development.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam cupiditate, illo architecto, sit veritatis, voluptatum velit tenetur laboriosam officiis molestiae dolorem, rem ipsa earum perferendis recusandae molestias delectus natus unde.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ut, eius cumque quis, ipsam sint nulla placeat eum enim omnis.</p>
+
+                <div class="clientsbox">
+                    <h2>Recent Clients</h2>
+                    <ul>
+                        <li><img src="img/dc.svg"></li>
+                        <li><img src="img/cadbury.svg"></li>
+                        <li><img src="img/ge.svg"></li>
+                        <li><img src="img/nrl.svg"></li>
+                        <li><img src="img/pacifica.svg"></li>
+                        <li><img src="img/tvnz.svg"></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="services">
+                <h2>What We Do</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum fugit a aliquid, vel soluta nemo debitis eius ex, sed dolorum, veritatis quam nam. Omnis deserunt vero consequatur totam, accusamus quaerat!</p>
+                <div class="servicebox">
+                    <div class="service">
+                        <figure>
+                            <img src="img/design.png">
+                        </figure>
+                        <article>
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus labore quaerat totam fugit debitis suscipit dolorem, quibusdam ipsa.</p>
+                        </article>
+                    </div>
+                    <div class="service">
+                        <figure>
+                            <img src="img/development.png">
+                        </figure>
+                        <article>
+                            <h3>Web Design</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus labore quaerat totam fugit debitis suscipit dolorem, quibusdam ipsa.</p>
+                        </article>
+                    </div>
+                    <div class="service">
+                        <figure>
+                            <img src="img/mobile.png">
+                        </figure>
+                        <article>
+                            <h3>Mobile Apps</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus labore quaerat totam fugit debitis suscipit dolorem, quibusdam ipsa.</p>
+                        </article>
+                    </div>
+                    <div class="service">
+                        <figure>
+                            <img src="img/marketing.png">
+                        </figure>
+                        <article>
+                            <h3>Creative Marketing</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus labore quaerat totam fugit debitis suscipit dolorem, quibusdam ipsa.</p>
+                        </article>
+                    </div>
+                    <div class="service">
+                        <figure>
+                            <img src="img/branding.png">
+                        </figure>
+                        <article>
+                            <h3>Branding</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus labore quaerat totam fugit debitis suscipit dolorem, quibusdam ipsa.</p>
+                        </article>
+                    </div>
+                    <div class="service">
+                        <figure>
+                            <img src="img/content.png">
+                        </figure>
+                        <article>
+                            <h3>Content Creation</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus labore quaerat totam fugit debitis suscipit dolorem, quibusdam ipsa.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="project" id="work" data-parallax="scroll" data-image-src="img/work-1.jpg">
+                <article>
+                    <h1>DC Comics</h1>
+                    <p>Microsite for promotion of Young Justice action figures</p>
+                    <button>See More</button>
+                </article>
+            </section>
+            <section class="project" data-parallax="scroll" data-image-src="img/work-2.jpg">
+                <article>
+                    <h1>Cadbury</h1>
+                    <p>Video promotion for Cadbury's Valentine Assortments</p>
+                    <button>See More</button>
+                </article>
+            </section>
+            <section class="project" data-parallax="scroll" data-image-src="img/work-3.jpg">
+                <article>
+                    <h1>NRL (National Rugby League)</h1>
+                    <p>Branding for NZ Warriors/Woodstock Bourbon campaign</p>
+                    <button>See More</button>
+                </article>
+            </section>
+            <section class="project" data-parallax="scroll" data-image-src="img/work-4.jpg">
+                <article>
+                    <h1>Pacifica Project NZ</h1>
+                    <p id="contact">Web and mobile site for Auckland Polyfest</p>
+                    <button>See More</button>
+                </article>
+            </section>
+
+            <footer>
+                <h2>Contact Us</h2>
+                <hr>
+                <div class="contactbox">
+                    <h3>We would love to work with you.<br>
+                    Call us on <span>0800 123 456</span> or send us your email</h3>
+                    <input type="text"><button>Send</button>
+                    <ul>
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-twitter"></i></li>
+                        <li><i class="fa fa-instagram"></i></li>
+                        <li><i class="fa fa-linkedin"></i></li>
+                    </ul>
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/parallax.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
