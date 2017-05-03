@@ -84,11 +84,6 @@ header {
   border-bottom: 3px solid #03A7E0;
 }
 
-/*#loader {
-  padding: 40px;
-  background: orange;
-}*/
-
 video#bgvid { 
     position: absolute;
     top: 50%;
@@ -137,6 +132,9 @@ video#bgvid {
 }
 .active {
   color: #E00B72 !important;
+}
+.menu h2 .active {
+  color: #CCCCCC;
 }
 #burger {
   font-size: 1.4em;
