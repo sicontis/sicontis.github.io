@@ -1,8 +1,11 @@
-$('.container').hide();
-
 $(function() {
 
+    $('.container').hide();
 
+    $(window).on('load', function() {
+        $('#loader').hide();
+        $('.container').show();
+    
 
     const video = document.getElementById('bgvid');
     const loader = $('#loader');
@@ -79,11 +82,7 @@ $(function() {
 
     $(document).on("scroll", onScroll);
     loadVideoBkg();
-});
-
-$(window).on('load', function() {
-    $('#loader').hide();
-    $('.container').show();
+    });
 });
 
 window.sr = ScrollReveal({ reset: true });
