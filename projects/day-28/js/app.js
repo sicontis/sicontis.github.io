@@ -1,87 +1,88 @@
+
 $(function() {
 
-    $('.container').hide();
+    const $container = $('.container');
+    const $loader = $('#loader');
+    const video = document.getElementById('bgvid');
+    const $topdiv = $('#about').offset().top;
+    const $menu = $('.menu');
+    const $parallax = $('.project');
+
+    $container.hide();
+    $parallax.parallax();
 
     $(window).on('load', function() {
-        $('#loader').hide();
-        $('.container').show();
-    
 
-    const video = document.getElementById('bgvid');
-    const loader = $('#loader');
-    let topdiv = $('#about').offset().top;
-    let menu = $('.menu');
-
-    $('.project').parallax();
-
-    $(window).scroll(function() {
-        if ($(this).scrollTop() >= topdiv) {
-            menu.css('opacity', 1);
-        }
-        else {
-           menu.css('opacity', 0);
-        }
-    });
-
-    $('#burger').click(function() {
-        $('#nav').slideToggle();
-        if($(this).hasClass('fa fa-bars')) {
-            $(this).attr('class', 'fa fa-times');
-        } else {
-            $(this).attr('class', 'fa fa-bars');
-        }
+        loadVideoBkg();
         
-    });
-    
-    $('#nav > a').each(() => {
-        $(this).on('click', () => {
-            $('#nav').slideUp();
+        
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= $topdiv) {
+                $menu.css('opacity', 1);
+            }
+            else {
+                $menu.css('opacity', 0);
+            }
         });
-    });
 
-    $('.slideto').click(function(e) {
-        e.preventDefault();
-        let section = $(this).attr('href');
-        $('html,body').animate({
-            scrollTop: $(section).offset().top
-        }, 1000);
-    });
-
-    function loadVideoBkg() {
-        let req = new XMLHttpRequest();
-        req.open('GET', 'video/bkg.mp4', true);
-        req.responseType = 'blob';
-        req.onload = function() {
-            if (this.status === 200) {
-                var videoBlob = this.response;
-                var vid = URL.createObjectURL(videoBlob); // IE10+
-                video.src = vid;
-                loader.fadeOut();
+        $('#burger').click(function() {
+            $('#nav').slideToggle();
+            if($(this).hasClass('fa fa-bars')) {
+                $(this).attr('class', 'fa fa-times');
             } else {
-
+                $(this).attr('class', 'fa fa-bars');
             }
-        }
-        req.send();
-    }
-
-    function onScroll(event){
-        var scrollPosition = $(document).scrollTop();
-        $('.menu a').each(function () {
-        var currentLink = $(this);
-        var refElement = $(currentLink.attr("href"));
-        if (refElement.position().top <= scrollPosition 
-            && refElement.position().top + refElement.height() > scrollPosition) {
-            $('.menu li a').removeClass("active");
-                currentLink.addClass("active");
-            }
-            else{
-                currentLink.removeClass("active");
-            }
+            
         });
-    }
+        
+        $('#nav > a').each(() => {
+            $(this).on('click', () => {
+                $('#nav').slideUp();
+            });
+        });
 
-    $(document).on("scroll", onScroll);
-    loadVideoBkg();
+        $('.slideto').click(function(e) {
+            e.preventDefault();
+            let section = $(this).attr('href');
+            $('html,body').animate({
+                scrollTop: $(section).offset().top
+            }, 1000);
+        });
+
+        function loadVideoBkg() {
+            let req = new XMLHttpRequest();
+            req.open('GET', 'video/bkg.mp4', true);
+            req.responseType = 'blob';
+            req.onload = function() {
+                if (this.status === 200) {
+                    var videoBlob = this.response;
+                    var vid = URL.createObjectURL(videoBlob); // IE10+
+                    video.src = vid;
+                    $loader.hide();
+                    $container.show();
+                }
+            }
+            req.send();
+        }
+
+        function onScroll(event){
+            var scrollPosition = $(document).scrollTop();
+            $('.menu a').each(function () {
+            var currentLink = $(this);
+            var refElement = $(currentLink.attr("href"));
+            if (refElement.position().top <= scrollPosition 
+                && refElement.position().top + refElement.height() > scrollPosition) {
+                $('.menu li a').removeClass("active");
+                    currentLink.addClass("active");
+                }
+                else{
+                    currentLink.removeClass("active");
+                }
+            });
+        }
+
+        $(document).on("scroll", onScroll);
     });
 });
 

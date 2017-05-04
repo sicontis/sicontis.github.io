@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: url('../img/bkg.jpg') no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.logo {
+  margin: 30px auto;
+  width: 180px;
+  height: 180px;
+  padding: 20px;
+  border: 5px solid #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.logo h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 2.4em;
+  color: #FC542A;
+  text-align: center;
+}
+.logo h1 span {
+  color: #FFFFFF;
+  display: block;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: .7em;
+}
+
+.hero {
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 10em;
+  color: #FC542A;
+}
+.hero article {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero article p {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.6em;
+  color: #FFFFFF;
+}
+.hero article button {
+  background: #FC542A;
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  padding: .7em;
+  margin: 1em 0;
+  transition: all .3s;
+}
+.hero article button:hover {
+  color: #FC542A;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 640px) and (min-width: 360px) {
+  
+  .logo {
+    margin: 20px auto;
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+  }
+  .logo h1 {
+    font-size: 1.5em;
+  }
+  .logo h1 span {
+    font-size: .7em;
+  }
+
+  .hero {
+    position: relative;
+    width: 70%;
+  }
+  .hero h1 {
+    font-size: 7em;
+  }
+  .hero article p {
+    font-size: 1.3em;
+  }
+  .hero article button {
+    font-size: 1em;
+    padding: .4em;
+  }
+
+}
